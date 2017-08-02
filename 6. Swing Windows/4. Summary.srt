@@ -1,0 +1,72 @@
+1
+00:00:01,000 --> 00:00:06,000
+You have learned some very interesting and powerful techniques as we've covered the basics of
+
+2
+00:00:06,000 --> 00:00:08,000
+JOptionPanes,
+
+3
+00:00:08,000 --> 00:00:09,000
+File Choosers,
+
+4
+00:00:09,000 --> 00:00:15,000
+and Color Choosers, all of which are very useful to almost any application.
+
+5
+00:00:15,000 --> 00:00:24,000
+First, you learned about the four elements of JOptionPanes: message, icon, data input, and buttons.
+
+6
+00:00:24,000 --> 00:00:32,000
+Then you learned about the three formats of JOptionPanes using versions of the three methods
+
+7
+00:00:32,000 --> 00:00:34,000
+showMessageDialog,
+
+8
+00:00:34,000 --> 00:00:37,000
+showOptionDialog,
+
+9
+00:00:37,000 --> 00:00:42,000
+and showInputDialog. You learned about
+
+10
+00:00:42,000 --> 00:00:49,000
+the various message types available in JOptionPanes, as well as the option types.
+
+11
+00:00:49,000 --> 00:00:51,000
+You also learned how to implement a File
+
+12
+00:00:51,000 --> 00:00:57,000
+Chooser, how to set its properties to point to specific directories, and you were introduced to code that
+
+13
+00:00:57,000 --> 00:01:04,000
+opens a file and displays it within a text area. You were introduced to code to filter specific
+
+14
+00:01:04,000 --> 00:01:10,000
+file types within a File Chooser as well. You also learned
+
+15
+00:01:10,000 --> 00:01:17,000
+of the JColorChooser component and the showDialog method used to create it.
+
+16
+00:01:17,000 --> 00:01:26,000
+You learned how to use the color object it returns to change the color of almost any component within your application.
+
+17
+00:01:26,000 --> 00:01:33,000
+Next, you'll learn how to customize the layout of an application more specifically using a tool call the
+
+18
+00:01:33,000 --> 00:59:00,000
+GridBag Customizer that comes in NetBeans.
+

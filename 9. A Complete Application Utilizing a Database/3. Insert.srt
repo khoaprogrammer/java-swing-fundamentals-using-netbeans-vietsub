@@ -1,0 +1,132 @@
+1
+00:00:02,000 --> 00:00:08,000
+When the user is entering a new record, it doesn't really make much sense for the Update and Delete buttons
+
+2
+00:00:08,000 --> 00:00:17,000
+to be visible. No problem. As you may recall, we used two different constructors to create the GridBagGUI window.
+
+3
+00:00:17,000 --> 00:00:24,000
+The first one here is the default and is called when we want to insert a record, so here we can type
+
+4
+00:00:24,000 --> 00:00:39,000
+updateButton.setVisible false and deleteButton.setVisible false.
+
+5
+00:00:39,000 --> 00:00:46,000
+Just to ensure we cover all our bases, let's play it safe and make sure that the Insert button is visible,
+
+6
+00:00:46,000 --> 00:00:56,000
+so we type insertButton.setVisible true. Now this next constructor is called for update and delete operations.
+
+7
+00:00:56,000 --> 00:01:06,000
+We don't want the Insert button and we do want the Update and Delete buttons, so let's paste the code and change
+
+8
+00:01:06,000 --> 00:01:19,000
+insert to false, update and delete to true. One last thing is necessary to make our Insert button work,
+
+9
+00:01:19,000 --> 00:01:30,000
+so right-click and select Action, actionPerformed. First, we'll need to create an instance of the Contacts
+
+10
+00:01:30,000 --> 00:01:36,000
+object, then assign the text fields from the form to its properties.
+
+11
+00:01:36,000 --> 00:01:57,000
+So Contacts c = new Contacts. C.setFirstname firstNameField.getText.
+
+12
+00:01:57,000 --> 00:02:23,000
+Then c.setLastname = lastNameField.getText, and c.setStreet streetField.getText, and lastly,
+
+13
+00:02:23,000 --> 00:02:41,000
+c.setCity = cityField.getText. Now to store our object in the database, we just create an instance of DBManager,
+
+14
+00:02:41,000 --> 00:02:55,000
+DBManager dbm = new DBManager and call its Insert method passing our Contacts object as a parameter,
+
+15
+00:02:55,000 --> 00:03:02,000
+dbm.insert c, then clean up the DBManager with the Close method.
+
+16
+00:03:02,000 --> 00:03:16,000
+Then of course the form window should close when we're done, so we can do that with setVisible false and dispose.
+
+17
+00:03:16,000 --> 00:03:25,000
+Now before we run it, we should start the DB server and connect to the database, so click the Services tab,
+
+18
+00:03:25,000 --> 00:03:34,000
+right-click Java Database, and select Start Server, then click the connection and select Connect.
+
+19
+00:03:34,000 --> 00:03:48,000
+Now let's run the application. Click on the Add Contact button and our form appears.
+
+20
+00:03:48,000 --> 00:04:04,000
+Only the Insert button is visible. Type in some data, first name, last name, street, and city, then click Insert.
+
+21
+00:04:04,000 --> 00:04:15,000
+The form window closes and oh, we have a problem here. The contacts table isn't updating with the new record.
+
+22
+00:04:15,000 --> 00:04:21,000
+Although there are solutions to forcing the table to refresh with the new data, none of them are actually very
+
+23
+00:04:21,000 --> 00:04:28,000
+easy to implement. In our case here, there is one simple work-around.
+
+24
+00:04:28,000 --> 00:04:35,000
+When the Add Contact button is clicked and the GridBagGUI form is generated, we can close the contacts table
+
+25
+00:04:35,000 --> 00:04:44,000
+window temporarily. Then when the user clicks the Insert button, we can regenerate the ContactsTableGUI and
+
+26
+00:04:44,000 --> 00:04:51,000
+it will appear with the new data. So first, let's move over to the ContactsTableGUI,
+
+27
+00:04:51,000 --> 00:04:59,000
+addContactButtonActionPerformed method, and add code to close that window.
+
+28
+00:04:59,000 --> 00:05:11,000
+We can just type setVisible false and dispose. Now back to the GridBagGUI's insertButtonActionPerformed
+
+29
+00:05:11,000 --> 00:05:29,000
+method and add new ContactTableGUI.setVisible true. Now this is not an ideal way of dealing with this issue,
+
+30
+00:05:29,000 --> 00:05:34,000
+but it does work for our purposes without getting overly complex.
+
+31
+00:05:34,000 --> 00:05:50,000
+Okay, let's run it once again. (Running) Click Add Contact and the contacts table closes.
+
+32
+00:05:50,000 --> 00:06:04,000
+Enter first name, last name, street, and city, click Insert, and the contacts table opens again showing our new data.
+
+33
+00:06:04,000 --> 00:59:00,000
+Next, we will cover update and delete.
+

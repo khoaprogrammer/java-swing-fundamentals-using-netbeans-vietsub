@@ -1,0 +1,112 @@
+1
+00:00:00,000 --> 00:00:09,000
+In this module, we're going to download and install NetBeans, then we'll explore some of its features and
+
+2
+00:00:09,000 --> 00:00:15,000
+structure, and after we're going to build an actual application, so you'll have a really good idea of what
+
+3
+00:00:15,000 --> 00:00:20,000
+NetBeans and Swing can do by the end of this module.
+
+4
+00:00:20,000 --> 00:00:30,000
+First, we're going to go open a browser. We'll go to netbeans.org.
+
+5
+00:00:30,000 --> 00:00:38,000
+And as you see on the home page, we'll click the Learn More button, and under Documentation click on the link
+
+6
+00:00:38,000 --> 00:00:46,000
+for Release Notes and then on System Requirements. You might want to look this over to see if their
+
+7
+00:00:46,000 --> 00:00:53,000
+requirements match your machine. Also, a little further down here we see Required Software.
+
+8
+00:00:53,000 --> 00:01:02,000
+Okay, in the last module we installed the JRE, the Java Runtime Environment, but NetBeans actually requires
+
+9
+00:01:02,000 --> 00:01:08,000
+the Java Development Kit that contains the additional developer tools for compiling and debugging.
+
+10
+00:01:08,000 --> 00:01:16,000
+We're going to need this. If you already have it installed, make sure that you have JDK 7u21.
+
+11
+00:01:16,000 --> 00:01:22,000
+That's the release that's necessary to run applications in NetBeans.
+
+12
+00:01:22,000 --> 00:01:28,000
+So let's go back to the home page here, and we'll click on the Download button.
+
+13
+00:01:28,000 --> 00:01:36,000
+We'll have several choices here. If you scroll down in the text below, it explains that you can download the
+
+14
+00:01:36,000 --> 00:01:47,000
+JDK separately, standalone, or in a bundle with NetBeans. If you already have the JDK installed on your machine,
+
+15
+00:01:47,000 --> 00:01:53,000
+you have two choices above. You can get the Java SE version or the Java EE version.
+
+16
+00:01:53,000 --> 00:02:00,000
+If you're a serious Java programmer and you might require in future the server like GlassFish or Apache Tomcat,
+
+17
+00:02:00,000 --> 00:02:06,000
+download the Java EE version. Otherwise, you can just download the Java SE version.
+
+18
+00:02:06,000 --> 00:02:17,000
+What we're going to do though is download the latest JDK with NetBeans IDE in a bundle, so click that link.
+
+19
+00:02:17,000 --> 00:02:23,000
+You'll have to accept the license agreement. If you want to read that, go right ahead.
+
+20
+00:02:23,000 --> 00:02:30,000
+Choose the proper version for your machine. If you have Windows, the x86 is actually the 32-bit version.
+
+21
+00:02:30,000 --> 00:02:42,000
+Windows x64 is the 64-bit version. I'm going to click on the x86 version myself, and it begins the download.
+
+22
+00:02:42,000 --> 00:02:47,000
+You can pause here. I'm going to go get a cup of coffee while you finish the download.
+
+23
+00:02:47,000 --> 00:02:49,000
+Let me know when you're done.
+
+24
+00:02:49,000 --> 00:02:55,000
+Okay great, we've completed the download. Now let's go over to the Downloads page on your browser.
+
+25
+00:02:55,000 --> 00:03:05,000
+You'll see the exe file in my case. We'll click on that. It will come up and ask us if we want to continue
+
+26
+00:03:05,000 --> 00:03:12,000
+with the program installation, Yes, and it will bring up the installer.
+
+27
+00:03:12,000 --> 00:03:18,000
+This is going to take you a few minutes, so I'm going to get another pot of coffee, and we'll move on.
+
+28
+00:03:18,000 --> 00:59:00,000
+In the next module, we'll open up NetBeans and explore what it can do.
+

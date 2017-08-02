@@ -1,0 +1,92 @@
+1
+00:00:02,000 --> 00:00:09,000
+Okay, let's fix the GUI to call our database code. To make life a little easier, let's first rename the four
+
+2
+00:00:09,000 --> 00:00:14,000
+text fields we'll be using, First Name, Last Name, Street, and City.
+
+3
+00:00:14,000 --> 00:00:19,000
+In the interest of time, we are not going to include the rest of the fields.
+
+4
+00:00:19,000 --> 00:00:29,000
+So right-click the First Name text field, and select Change Variable Name, and call it firstNameField.
+
+5
+00:00:29,000 --> 00:00:40,000
+Then right-click the Last Name field, and call it lastNameField, then right-click the Street field,
+
+6
+00:00:40,000 --> 00:00:49,000
+call it streetField, and right-click the City field, and call it cityField.
+
+7
+00:00:49,000 --> 00:00:59,000
+This GUI, GridBagGUI it's called, will pop up whenever we want the user to either insert, update, or delete a record.
+
+8
+00:00:59,000 --> 00:01:06,000
+The main window of our application is still a contacts table GUI, the one displaying the table data,
+
+9
+00:01:06,000 --> 00:01:16,000
+so we'll want to change the JFrame property of the GridBagGUI defaultCloseOperation property to DISPOSE
+
+10
+00:01:16,000 --> 00:01:22,000
+just as we did earlier when we created the About window. Do you remember that?
+
+11
+00:01:22,000 --> 00:01:29,000
+So now, when this window closes, it will not exit the entire application altogether.
+
+12
+00:01:29,000 --> 00:01:37,000
+Oh, one last thing. These three buttons should now be called Insert, Update, and Delete, so we'll need to
+
+13
+00:01:37,000 --> 00:01:42,000
+rename them and let's change the variable names while we're at it.
+
+14
+00:01:42,000 --> 00:01:57,000
+Right-click, Edit Text, type Insert. Then right-click, Change Variable Name to insertButton.
+
+15
+00:01:57,000 --> 00:02:08,000
+Right-click, Edit Text, and type Update. Right-click, Change Variable Name to updateButton.
+
+16
+00:02:08,000 --> 00:02:20,000
+Right-click, Edit Text, call it Delete. Right-click it, change its name to deleteButton.
+
+17
+00:02:20,000 --> 00:02:26,000
+For now, let's go over to the ContactsTableGUI and add what we need there.
+
+18
+00:02:26,000 --> 00:02:42,000
+Let's stretch out the JFrame to make room for a new button. Drag a button down here, change its text to Add Contact,
+
+19
+00:02:42,000 --> 00:02:51,000
+and change its variable name to addContactButton. Now let's right-click the button and create an
+
+20
+00:02:51,000 --> 00:03:01,000
+actionPerformed event for it. Here is where we can create the GridBagGUI form, so the user can enter the new data.
+
+21
+00:03:01,000 --> 00:03:14,000
+So as we did before for the About GUI in a previous module, we type new GridBagGUI.setVisible true.
+
+22
+00:03:14,000 --> 00:03:25,000
+Now let's try it. The application starts up with the contacts table as the default, click the Add Contact
+
+23
+00:03:25,000 --> 00:59:00,000
+button, and the GridBagGUI form appears. Next, we'll add our insert code.
+

@@ -1,0 +1,56 @@
+1
+00:00:03,000 --> 00:00:07,000
+Well now you have built an application that interacts with the database.
+
+2
+00:00:07,000 --> 00:00:15,000
+Using the GUI windows we built previously, you learned to insert, update, and delete records in a database table.
+
+3
+00:00:15,000 --> 00:00:20,000
+Although we had to actually write some code to do so, you learned some valuable techniques.
+
+4
+00:00:20,000 --> 00:00:21,000
+As a bonus,
+
+5
+00:00:21,000 --> 00:00:28,000
+you had an introduction to the Java Persistence API and learned how that makes the developer's job somewhat
+
+6
+00:00:28,000 --> 00:00:32,000
+easier using its EntityManager methods.
+
+7
+00:00:32,000 --> 00:00:39,000
+You learned about annotations and how to use them to create a unique primary key generator.
+
+8
+00:00:39,000 --> 00:00:45,000
+You learned how to set the visibility of buttons in a window to suit the application's needs.
+
+9
+00:00:45,000 --> 00:00:50,000
+You learned how to create and close windows easily. You learned how to
+
+10
+00:00:50,000 --> 00:00:59,000
+match text fields in a form to a Java entity bean, then use that object with the EntityManager.
+
+11
+00:00:59,000 --> 00:01:06,000
+You learned how to use the ListSelectionListener interface to listen for mouse events on a JTable,
+
+12
+00:01:06,000 --> 00:01:11,000
+then pass that row's data to a GUI window's text fields.
+
+13
+00:01:11,000 --> 00:01:15,000
+There are many different ways to code to interact with a database.
+
+14
+00:01:15,000 --> 00:59:00,000
+How would you go about it? At least now, you have a strong foundation of how to build the GUI interface.
+

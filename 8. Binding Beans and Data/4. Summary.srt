@@ -1,0 +1,52 @@
+1
+00:00:01,000 --> 00:00:08,000
+You have just learned about the Beans Binding Library provided in NetBeans and used it to bind the properties
+
+2
+00:00:08,000 --> 00:00:13,000
+from component to component and from a component to a database table.
+
+3
+00:00:13,000 --> 00:00:15,000
+You learned to bind the property of a
+
+4
+00:00:15,000 --> 00:00:20,000
+target component to a source component. You learned how to set up and
+
+5
+00:00:20,000 --> 00:00:30,000
+configure a Java DB Database in the NetBeans Services window. You learned how to start the database server,
+
+6
+00:00:30,000 --> 00:00:32,000
+create a database,
+
+7
+00:00:32,000 --> 00:00:35,000
+and connect to it. You learned how to use the
+
+8
+00:00:35,000 --> 00:00:38,000
+Create Table dialog
+
+9
+00:00:38,000 --> 00:00:41,000
+and add columns to a table.
+
+10
+00:00:41,000 --> 00:00:48,000
+You learned how to add data directly into a database table without even using SQL.
+
+11
+00:00:48,000 --> 00:00:54,000
+You learned how to create an entity bean to represent data in the database table.
+
+12
+00:00:54,000 --> 00:01:00,000
+Then you learned how to bind a database table to a JTable component.
+
+13
+00:01:00,000 --> 00:59:00,000
+You've learned the basics of a very powerful tool that makes interacting with a database quite easy.
+

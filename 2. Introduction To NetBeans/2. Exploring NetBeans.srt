@@ -1,0 +1,184 @@
+1
+00:00:02,000 --> 00:00:08,000
+Great, you've got NetBeans installed. Now let's spend some time exploring its features.
+
+2
+00:00:08,000 --> 00:00:12,000
+First, you'll notice that the Start Page comes up automatically.
+
+3
+00:00:12,000 --> 00:00:18,000
+You'll see links here to sample projects and tutorials included with NetBeans, but I recommend that you
+
+4
+00:00:18,000 --> 00:00:24,000
+finish this course first, then move on to more advanced topics if you're interested in doing so.
+
+5
+00:00:24,000 --> 00:00:32,000
+You can uncheck the Show On Startup checkbox here if you don't want to see the startup page every time you open NetBeans.
+
+6
+00:00:32,000 --> 00:00:39,000
+If you want to see it again later, you can always pull it up by going to Help and pulling down to Start Page.
+
+7
+00:00:39,000 --> 00:00:46,000
+For now, let's just close it out. Okay, to see the structure of NetBeans and what it can do, we need to actually
+
+8
+00:00:46,000 --> 00:00:54,000
+create a project, so we're going to start right off here, create New Project from the File menu.
+
+9
+00:00:54,000 --> 00:00:57,000
+You'll see a list of categories for different sorts of applications.
+
+10
+00:00:57,000 --> 00:01:05,000
+Choose Java and Java Application. So our project is going to be a trivial little application called the
+
+11
+00:01:05,000 --> 00:01:11,000
+Kilometer Converter. It will give us a great example of everything NetBeans can do, but it will be rather
+
+12
+00:01:11,000 --> 00:01:22,000
+easy to build. So we need to name the project. Let's call it KilometerConverterProject as the project name.
+
+13
+00:01:22,000 --> 00:01:29,000
+You can leave the project location and project folder fields set to their default values or click the Browse
+
+14
+00:01:29,000 --> 00:01:37,000
+button to choose an alternate location on your system. Make sure to deselect the Create Main Class checkbox.
+
+15
+00:01:37,000 --> 00:01:45,000
+We won't need that for now. Leaving this option selected generates a new class as the main entry point for the
+
+16
+00:01:45,000 --> 00:01:52,000
+application, but our main GUI window created in the next step will serve that purpose, so checking this box
+
+17
+00:01:52,000 --> 00:01:59,000
+is not necessary. Click the Finish button when you are done. Now you'll see the project appears in the Projects
+
+18
+00:01:59,000 --> 00:02:07,000
+pane in the upper left-hand corner of the IDE. Now right-click on the KilometerConverterProject name and
+
+19
+00:02:07,000 --> 00:02:17,000
+choose New, JFrame Form. JFrame is the Swing class component responsible for the main frame of your application.
+
+20
+00:02:17,000 --> 00:02:30,000
+Next, type KilometerConverterGUI as the class name and com.Pluralsight as the package name.
+
+21
+00:02:30,000 --> 00:02:36,000
+You can actually name this package anything you want, but here we're following the standard coding conventions.
+
+22
+00:02:36,000 --> 00:02:45,000
+The remainder of the field should automatically be filled in. Click the Finish button when you are done.
+
+23
+00:02:45,000 --> 00:02:54,000
+When the IDE finishes loading, let's familiarize you briefly about just some of the features of the NetBeans IDE.
+
+24
+00:02:54,000 --> 00:03:00,000
+In the upper right-hand corner, you will see the Palette pane. It is here that you will find all the components
+
+25
+00:03:00,000 --> 00:03:06,000
+available in the Swing API. Most of these may look familiar to you.
+
+26
+00:03:06,000 --> 00:03:13,000
+This is where we will choose our application's components. The Design area in the top center pane is where
+
+27
+00:03:13,000 --> 00:03:24,000
+you will visually construct your GUI. It has two views, Source View, and Design View, Design View being the default.
+
+28
+00:03:24,000 --> 00:03:29,000
+You can toggle between views at any time by clicking their respective tabs.
+
+29
+00:03:29,000 --> 00:03:33,000
+Source View will show you the actual source code for the class.
+
+30
+00:03:33,000 --> 00:03:40,000
+Let's go ahead and click on the Source View tab. Notice the pluses and minuses along the left that allow you
+
+31
+00:03:40,000 --> 00:03:47,000
+to expand and to hide sections of code. Expand all of the sections if they are not already.
+
+32
+00:03:47,000 --> 00:03:53,000
+You will see NetBeans has automatically generated code that is commonly expected, such as the user clicking
+
+33
+00:03:53,000 --> 00:04:02,000
+the close button on the window. This code appears in uneditable blue sections of code called guarded blocks.
+
+34
+00:04:02,000 --> 00:04:08,000
+Now programmers that like to have complete control over their application might not like the idea of not being
+
+35
+00:04:08,000 --> 00:04:16,000
+able to edit these, but this is pretty much standard code that you can rely upon and won't need to change.
+
+36
+00:04:16,000 --> 00:04:23,000
+Have a look at the private method, initComponents, which initializes the various components of the GUI.
+
+37
+00:04:23,000 --> 00:04:32,000
+It also tells the application to exit on close, preform some layout specific tasks, then packs the soon-to-be
+
+38
+00:04:32,000 --> 00:04:42,000
+added components together on the screen. Don't feel that you need to understand this code in any detail just yet.
+
+39
+00:04:42,000 --> 00:04:48,000
+Okay, the next pane we'll explore is the property editor located just below the palette.
+
+40
+00:04:48,000 --> 00:04:53,000
+This area allows you to edit all the properties of each component.
+
+41
+00:04:53,000 --> 00:05:00,000
+The property editor is easy to use, allowing you to click and edit individual properties for a component without
+
+42
+00:05:00,000 --> 00:05:08,000
+entering the source code directly. The next pane is the inspector located at the bottom left.
+
+43
+00:05:08,000 --> 00:05:14,000
+The inspector shows us a graphical representation of our application's components.
+
+44
+00:05:14,000 --> 00:05:21,000
+Currently we only have the JFrame component, but after we add a few more you'll be able to click on each
+
+45
+00:05:21,000 --> 00:05:26,000
+component, and its properties will appear in the property editor.
+
+46
+00:05:26,000 --> 00:59:00,000
+Okay, you can save this for now, and in the next section we're going to build our GUI application.
+

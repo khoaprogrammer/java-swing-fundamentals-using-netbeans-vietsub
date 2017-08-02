@@ -1,0 +1,352 @@
+1
+00:00:02,000 --> 00:00:10,000
+Okay, let's design our first application. First, let's set the title of our application that will appear in
+
+2
+00:00:10,000 --> 00:00:15,000
+the title bar. Click once on the JFrame object in the inspector window.
+
+3
+00:00:15,000 --> 00:00:24,000
+Then edit the title in the property editor to read Kilometer Converter.
+
+4
+00:00:24,000 --> 00:00:31,000
+You won't see the title appear just yet in the Design area, but it will show up when we run the actual application.
+
+5
+00:00:31,000 --> 00:00:39,000
+Next, let's drag a jTextField from the Palette to the upper left-hand corner of the Design area.
+
+6
+00:00:39,000 --> 00:00:48,000
+As you approach the upper left corner, the GUI builder provides visual cues that suggest appropriate spacing.
+
+7
+00:00:48,000 --> 00:00:53,000
+We'll add more explicit names for each component and alter the text within the fields later.
+
+8
+00:00:53,000 --> 00:00:58,000
+For now, we'll continue just adding all the necessary components.
+
+9
+00:00:58,000 --> 00:01:06,000
+Next, let's drag a jLabel onto the Design area, place it to the right of the jTextField, again watching for
+
+10
+00:01:06,000 --> 00:01:14,000
+visual cues that suggest an appropriate amount of spacing. We'll make sure the text base is aligned with
+
+11
+00:01:14,000 --> 00:01:21,000
+that of the jTextField. Okay, now let's drag a jButton from the Palette and position it to the left and
+
+12
+00:01:21,000 --> 00:01:28,000
+underneath the jTextField. Again, the visual cues help guide it into place.
+
+13
+00:01:28,000 --> 00:01:33,000
+Finally, let's add a second jLabel, placing it to the right of the jButton.
+
+14
+00:01:33,000 --> 00:01:40,000
+Great! All of our GUI components are now in place. Let's make some adjustments and give everything the
+
+15
+00:01:40,000 --> 00:01:49,000
+proper names as well. First, click the jTextField and blank out the default text.
+
+16
+00:01:49,000 --> 00:01:54,000
+When you erase the text from the jTextField, it will shrink in size.
+
+17
+00:01:54,000 --> 00:01:57,000
+Don't worry about that for now; we'll fix that in just a minute.
+
+18
+00:01:57,000 --> 00:02:07,000
+Now click on the jButton, then change the text of the jButton from jButton1 to Convert.
+
+19
+00:02:07,000 --> 00:02:22,000
+Also, change the top jLabel text to Miles and the bottom jLabel to Kilometers.
+
+20
+00:02:22,000 --> 00:02:31,000
+Now we can fix that pesky little jTextField. Click it, and Shift+Click the jButton as well, right-click,
+
+21
+00:02:31,000 --> 00:02:38,000
+Ctrl+Click for Mac users, and pull down to Same Size, Same Width.
+
+22
+00:02:38,000 --> 00:02:46,000
+The components now snap to the same width. When you perform this step, make sure the JFrame itself is not also selected.
+
+23
+00:02:46,000 --> 00:02:55,000
+If it is, the Same Size menu will not be active. Finally, grab the lower right-hand corner of the JFrame and
+
+24
+00:02:55,000 --> 00:03:02,000
+adjust its size to eliminate any extra white space. Note that if you eliminate all of the extra space,
+
+25
+00:03:02,000 --> 00:03:07,000
+the title, which only appears at runtime, may not show completely.
+
+26
+00:03:07,000 --> 00:03:14,000
+The end user is free to resize the application as desired, but you may want to leave some extra space on the
+
+27
+00:03:14,000 --> 00:03:23,000
+right side to make sure that everything fits correctly. The GUI portion of this application is now complete.
+
+28
+00:03:23,000 --> 00:03:29,000
+NetBeans has done most of the work for us, and creating this GUI was simple, if not a trivial task.
+
+29
+00:03:29,000 --> 00:03:38,000
+Now, take a minute to click on the Source tab. You might be surprised that the amount of code that has been generated.
+
+30
+00:03:38,000 --> 00:03:45,000
+Remember that you might have to click the plus or minus signs along the left to expand out your code sections.
+
+31
+00:03:45,000 --> 00:03:52,000
+Now, all that's left for us to do is add the application's logic, which by the way is what programmers should
+
+32
+00:03:52,000 --> 00:04:01,000
+be focusing on, not wasting time building layouts. Let's begin by giving our components names that make sense.
+
+33
+00:04:01,000 --> 00:04:09,000
+Right-click the jTextField component in the inspector pane and choose Change Variable Name.
+
+34
+00:04:09,000 --> 00:04:21,000
+Let's call it milesTextField. Next, jLabel1, let's change that to milesLabel.
+
+35
+00:04:21,000 --> 00:04:34,000
+Next, jButton1, and we'll call it convertButton. And lastly, jLabel2, and we'll call it kilometerLabel.
+
+36
+00:04:34,000 --> 00:04:39,000
+Our source code will automatically be updated with the new names.
+
+37
+00:04:39,000 --> 00:04:46,000
+When a user interacts with a Swing GUI component, such as clicking the Convert button, that component will
+
+38
+00:04:46,000 --> 00:04:54,000
+generate a special kind of object called an event object, which it will then broadcast to any other objects
+
+39
+00:04:54,000 --> 00:04:59,000
+that have previously registered themselves as listeners for that event.
+
+40
+00:04:59,000 --> 00:05:06,000
+The NetBeans IDE makes event listener registration extremely simple.
+
+41
+00:05:06,000 --> 00:05:11,000
+In the Design area, let's click on the Convert button to select it.
+
+42
+00:05:11,000 --> 00:05:18,000
+Make sure that only the Convert button is selected. If the JFrame is also selected, this step will not work.
+
+43
+00:05:18,000 --> 00:05:26,000
+Right-click the Convert button and choose Events, Action, actionPerformed.
+
+44
+00:05:26,000 --> 00:05:34,000
+This will generate the required event handling code leaving you with empty method bodies in which to add your own functionality.
+
+45
+00:05:34,000 --> 00:05:41,000
+There are many different event types representing the various kinds of actions that a user can take like
+
+46
+00:05:41,000 --> 00:05:47,000
+clicking the mouse, typing on the keyboard, moving the mouse. Our application is only concerned with the
+
+47
+00:05:47,000 --> 00:05:56,000
+action event for now. The next step will be to add the actual code to convert miles to kilometers.
+
+48
+00:05:56,000 --> 00:06:02,000
+As you can see, NetBeans has generated a method called convertButtonActionPerformed.
+
+49
+00:06:02,000 --> 00:06:07,000
+Code placed within this method will execute when the Convert button is clicked.
+
+50
+00:06:07,000 --> 00:06:13,000
+We simply need to obtain the number that the user entered in the milesTextField, perform a calculation that
+
+51
+00:06:13,000 --> 00:06:19,000
+converts it to kilometers, then set the kilometer label to display the answer.
+
+52
+00:06:19,000 --> 00:06:26,000
+So let's comment everything as we go to keep things clear. To get the user's input from the milesTextField,
+
+53
+00:06:26,000 --> 00:06:33,000
+we'll write this code. We want the answer to be a double so that we can have a decimal number,
+
+54
+00:06:33,000 --> 00:06:42,000
+and we'll call it inputNumber. Then we'll convert the text in the milesTextField to a double.
+
+55
+00:06:42,000 --> 00:07:04,000
+Then we calculate and set the answer. (Typing) So let's create another double and call it answer. (Typing)
+
+56
+00:07:04,000 --> 00:07:18,000
+To convert miles to kilometers, we multiply miles by 1.609344, and the F designates the number as a decimal
+
+57
+00:07:18,000 --> 00:07:31,000
+of a float type. Lastly, to set the kilometer label with the answer, we say this.kilometerLabel.setText in
+
+58
+00:07:31,000 --> 00:07:40,000
+parenthesis, answer, which is our variable, + the string, space, kilometers.
+
+59
+00:07:40,000 --> 00:07:48,000
+This concatenates and converts the numeric answer along with the string kilometers with a space to a string
+
+60
+00:07:48,000 --> 00:07:55,000
+we can display in the kilometer label. Okay, let's run this and see what happens.
+
+61
+00:07:55,000 --> 00:08:02,000
+Simply click Run and Run Main Project here at the top. The first time you run an application, you will be
+
+62
+00:08:02,000 --> 00:08:09,000
+prompted with a dialog asking to set KilometerConverterGUI as the main class for the project.
+
+63
+00:08:09,000 --> 00:08:22,000
+Click the OK button, and when the program finishes compiling you will see the application running in its own window.
+
+64
+00:08:22,000 --> 00:08:30,000
+Let's enter a number. In the Miles text field click the Convert button, and the answer appears.
+
+65
+00:08:30,000 --> 00:08:37,000
+Now there are two problems with this code. As you'll see, some numbers convert to kilometers with way too
+
+66
+00:08:37,000 --> 00:08:45,000
+many decimal places. We can fix that. Also, the user could possibly enter non-numeric text in the Miles
+
+67
+00:08:45,000 --> 00:08:52,000
+text field, and that would break our code. But we can fix that too, so let's close the application and go
+
+68
+00:08:52,000 --> 00:08:59,000
+back to our code. For the first fix, we'll use a class in Java called DecimalFormat that will limit the
+
+69
+00:08:59,000 --> 00:09:08,000
+answer to two decimal places. We'll create a new DecimalFormat object, let's call it df, and we will limit
+
+70
+00:09:08,000 --> 00:09:20,000
+it to two decimal places represented by this string of pound signs, this pattern.
+
+71
+00:09:20,000 --> 00:09:30,000
+Then we'll format the answer using df.format method. The format method will return a string instead of a
+
+72
+00:09:30,000 --> 00:09:39,000
+double, so we'll need to change that type. We have an exclamation point over here denoting an error.
+
+73
+00:09:39,000 --> 00:09:46,000
+The class can't find the DecimalFormat class. So clicking on the light bulb, we can have NetBeans
+
+74
+00:09:46,000 --> 00:10:02,000
+automatically add the import for that class. (Typing) Now, for the next fix we'll need to enclose this line
+
+75
+00:10:02,000 --> 00:10:13,000
+of code here in a try-catch block. Any non-numeric numbers entered will throw an exception.
+
+76
+00:10:13,000 --> 00:10:24,000
+We can catch that exception and display a message to the user using the JOptionPane class.
+
+77
+00:10:24,000 --> 00:10:31,000
+It has a method called showMessageDialog. The parameters for this method are this, which represents the
+
+78
+00:10:31,000 --> 00:10:47,000
+parent component, a message telling the user to please enter a valid number; (Typing) the title,
+
+79
+00:10:47,000 --> 00:11:04,000
+which we'll call Error for this message window; and we'll use a standard JOptionPane type for errors. (Working)
+
+80
+00:11:04,000 --> 00:11:11,000
+One more problem now we've declared the variable input number inside of a try-catch block, so it's out of
+
+81
+00:11:11,000 --> 00:11:24,000
+scope for the code following, so we need to extract that out and put it at the top of the method like so.
+
+82
+00:11:24,000 --> 00:11:33,000
+That's it. Let's run the application once again and check it out.
+
+83
+00:11:33,000 --> 00:11:47,000
+Now any number I enter is limited to two decimal places, (Typing) and if I enter text into the Miles field
+
+84
+00:11:47,000 --> 00:11:55,000
+an error message appears. There you go. You've built your first Swing application that will run on any
+
+85
+00:11:55,000 --> 00:12:01,000
+platform that runs Java. Now you may have a better understanding of the ease and power of using Swing and
+
+86
+00:12:01,000 --> 00:12:08,000
+NetBeans as a tool to build quite complex GUI interfaces in a short period of time and how this can
+
+87
+00:12:08,000 --> 00:12:11,000
+expand your worth as a programmer.
+
+88
+00:12:11,000 --> 00:59:00,000
+Next, we'll take a closer look at Swing's components, containers, and menus.
+

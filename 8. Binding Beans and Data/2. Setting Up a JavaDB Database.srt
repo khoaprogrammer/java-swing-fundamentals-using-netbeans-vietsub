@@ -1,0 +1,192 @@
+1
+00:00:02,000 --> 00:00:06,000
+To demonstrate how to bind data from a component to a database,
+
+2
+00:00:06,000 --> 00:00:14,000
+first we need a database. Databases are easily set up and configured in the NetBeans Integrated Development Environment.
+
+3
+00:00:14,000 --> 00:00:21,000
+Any sort of database could be used, but we are going to use a database called Java DB that is included with
+
+4
+00:00:21,000 --> 00:00:29,000
+the GlassFish Application Server installation and also in the JDK 6 or later.
+
+5
+00:00:29,000 --> 00:00:34,000
+All that you need should already be in the JDK that you downloaded earlier.
+
+6
+00:00:34,000 --> 00:00:41,000
+You can check your JDK to see if it's there. Java DB was an open source project originally called Apache Derby,
+
+7
+00:00:41,000 --> 00:00:52,000
+so if you expand your jdk folder to the db folder, then the lib folder, you should see the derbyclient.jar and so on.
+
+8
+00:00:52,000 --> 00:00:58,000
+For some reason if it's not there, you can download and extract it to your drive.
+
+9
+00:00:58,000 --> 00:01:04,000
+Oracle's website is a little confusing, so I recommend this one for an easy install.
+
+10
+00:01:04,000 --> 00:01:15,000
+It's java-db.updatestar.com. Download it, and then extract it to your drive.
+
+11
+00:01:15,000 --> 00:01:24,000
+First, your Java DB must be registered in NetBeans, so click the Services tab here, expand Databases,
+
+12
+00:01:24,000 --> 00:01:33,000
+then right-click Java DB and choose Properties. Here you must point to your Java DB installation directory
+
+13
+00:01:33,000 --> 00:01:39,000
+and also choose the location where the newly created databases will live.
+
+14
+00:01:39,000 --> 00:01:48,000
+Mine points to the db folder of my jdk installation. You can use the default for the other location and click OK.
+
+15
+00:01:48,000 --> 00:01:57,000
+Now right-click the Java DB, and choose Start Server. You should see the progress logged in the console window below.
+
+16
+00:01:57,000 --> 00:02:07,000
+Right-click Java DB once again, and choose Create Database. Type contact as the database name.
+
+17
+00:02:07,000 --> 00:02:18,000
+Type nbuser as the username and password. Then click OK. You can see that the database was created,
+
+18
+00:02:18,000 --> 00:02:26,000
+and down here is the database connection, which is currently not connected denoted by this broken icon.
+
+19
+00:02:26,000 --> 00:02:33,000
+So to connect to the new database, right-click on the connection and choose Connect.
+
+20
+00:02:33,000 --> 00:02:39,000
+Now the icon is no longer broken. Now let's give the connection a more convenient name.
+
+21
+00:02:39,000 --> 00:02:48,000
+Right-click the connection once again and choose Rename. Type in ContactDB and click OK.
+
+22
+00:02:48,000 --> 00:02:55,000
+There are two methods for creating tables in our new database. You can type SQL directly into the SQL editor
+
+23
+00:02:55,000 --> 00:03:01,000
+if you wish. Right-click the connection and choose Execute Command.
+
+24
+00:03:01,000 --> 00:03:07,000
+Type in the SQL in the window. Then click the Run SQL button here at the top.
+
+25
+00:03:07,000 --> 00:03:15,000
+An easier method though, is to use the create table dialog, so let's close the SQL editor window.
+
+26
+00:03:15,000 --> 00:03:24,000
+To use the create table dialog, expand the ContactDB connection node, and you will see several schemas listed.
+
+27
+00:03:24,000 --> 00:03:34,000
+For this example, you will use only the NBUSER schema, so right-click it and choose Set as Default Schema.
+
+28
+00:03:34,000 --> 00:03:44,000
+Expand the NBUSER node, and you'll see three folders. Right-click the Tables folder and choose Create Table.
+
+29
+00:03:44,000 --> 00:03:55,000
+Let's call this table CONTACTS, all caps. Click Add column, and let's name it id for our primary key and
+
+30
+00:03:55,000 --> 00:04:08,000
+make it of type INTEGER. Select Primary key, and also Index and Unique will automatically be selected.
+
+31
+00:04:08,000 --> 00:04:18,000
+Click OK. Just a few more columns for an example. Let's click Add column again, call this one firstname,
+
+32
+00:04:18,000 --> 00:04:26,000
+and its type is VARCHAR, which is a string with the size of say 20 characters.
+
+33
+00:04:26,000 --> 00:04:33,000
+Check Null as its constraint so that if no data is entered a null value will be displayed.
+
+34
+00:04:33,000 --> 00:04:42,000
+Let's do the same again for lastname, VARCHAR, size 20, and Null.
+
+35
+00:04:42,000 --> 00:04:53,000
+Just two more columns. Add column, call it street, VARCHAR, and let's allow 30 characters for this and Null.
+
+36
+00:04:53,000 --> 00:05:02,000
+One last column, Add column, call it city, VARCHAR, size 20, and Null.
+
+37
+00:05:02,000 --> 00:05:12,000
+Now click OK to create the table. Expand the CONTACTS table node, and you'll see the new columns listed.
+
+38
+00:05:12,000 --> 00:05:19,000
+We have a table, but no data in it. We could add data by right-clicking the CONTACTS DB and choosing Execute
+
+39
+00:05:19,000 --> 00:05:29,000
+Command, but there's an easier way. Choose View Data. Our table's empty, so click the Insert Records button
+
+40
+00:05:29,000 --> 00:05:36,000
+here, and we can directly type in our data. The first column shows an item number.
+
+41
+00:05:36,000 --> 00:05:51,000
+Let's use the same for our ID, so number 1, FIRSTNAME John, LASTNAME Doe, STREET 1234 Main St., and CITY Anytown.
+
+42
+00:05:51,000 --> 00:06:10,000
+Let's add another row, ID 2, FIRSTNAME Jane, LASTNAME Smith, STREET 4321 Maple, CITY Cleveland.
+
+43
+00:06:10,000 --> 00:06:26,000
+Click Add Row, ID 3, Joe, Jones, 1111 Netbeans, and Des Moines.
+
+44
+00:06:26,000 --> 00:06:40,000
+Just one more. Add Row, ID 4, Mary, Berry, 21 Jump St., and Paris.
+
+45
+00:06:40,000 --> 00:06:47,000
+That should be enough. Click OK. You see our data listed in the view data table here.
+
+46
+00:06:47,000 --> 00:06:53,000
+That's it. We've easily created a database for our following example.
+
+47
+00:06:53,000 --> 00:07:03,000
+When you are finished with NetBeans, before closing, you should Disconnect from CONTACTS and Stop Server on the JavaDB.
+
+48
+00:07:03,000 --> 00:59:00,000
+You already know how to restart and reconnect next time you open.
+

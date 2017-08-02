@@ -1,0 +1,136 @@
+1
+00:00:00,000 --> 00:00:09,000
+Wow, we have covered quite a lot of information. You should now be capable of building nearly any sort of
+
+2
+00:00:09,000 --> 00:00:14,000
+GUI interface using Swing. You now have learned valuable skills that can
+
+3
+00:00:14,000 --> 00:00:20,000
+surely increase your worth as a programmer whether you are a beginner or a seasoned developer.
+
+4
+00:00:20,000 --> 00:00:24,000
+You learned about Swing's structure and capabilities.
+
+5
+00:00:24,000 --> 00:00:30,000
+You learned about the Model-View-Controller architecture and its benefits.
+
+6
+00:00:30,000 --> 00:00:36,000
+You learned how to download and use the NetBeans IDE and about many of its powerful features.
+
+7
+00:00:36,000 --> 00:00:43,000
+Most importantly, you have learned how the NetBeans IDE can make building complex cross-platform GUI
+
+8
+00:00:43,000 --> 00:00:51,000
+interfaces easy and fast, leaving time for more difficult coding that you will surely need.
+
+9
+00:00:51,000 --> 00:00:58,000
+You learned the basics of many Swing components including labels, text fields, text areas, buttons,
+
+10
+00:00:58,000 --> 00:01:11,000
+radio buttons, checkboxes, lists, combo boxes, spinners, sliders, progress bars, tables, and trees.
+
+11
+00:01:11,000 --> 00:01:21,000
+You learned about Swing containers including panels, scroll panes, split panes, tabbed panes, layered panes,
+
+12
+00:01:21,000 --> 00:01:27,000
+toolbars, desktop panes, and internal frames. You learned how to
+
+13
+00:01:27,000 --> 00:01:37,000
+build Swing menus including checkbox menus, radio button menus, submenus, and pop-up menus and how to handle
+
+14
+00:01:37,000 --> 00:01:40,000
+events from menu selections. You learned how
+
+15
+00:01:40,000 --> 00:01:45,000
+to create dialogs including the showMessageDialog,
+
+16
+00:01:45,000 --> 00:01:47,000
+the showInputDialog,
+
+17
+00:01:47,000 --> 00:01:50,000
+and the showOptionDialog. You learned how to
+
+18
+00:01:50,000 --> 00:01:51,000
+use File Choosers
+
+19
+00:01:51,000 --> 00:01:57,000
+and Color Choosers as well. You learned about NetBeans powerful tool,
+
+20
+00:01:57,000 --> 00:02:04,000
+the GridBag Customizer and how easy it is to build complex GUIs with it.
+
+21
+00:02:04,000 --> 00:02:09,000
+You learned how to bind properties of a component to another components property.
+
+22
+00:02:09,000 --> 00:02:14,000
+Then you learned how to set up the Java DB database,
+
+23
+00:02:14,000 --> 00:02:15,000
+create tables,
+
+24
+00:02:15,000 --> 00:02:20,000
+and data within it using NetBeans database tools.
+
+25
+00:02:20,000 --> 00:02:26,000
+You learned how to bind the database table to a JTable to display it.
+
+26
+00:02:26,000 --> 00:02:28,000
+Finally, you learned how to build
+
+27
+00:02:28,000 --> 00:02:36,000
+a complete application interacting with a database inserting, update, and deleting records.
+
+28
+00:02:36,000 --> 00:02:41,000
+You also had an introduction to the Java Persistence API.
+
+29
+00:02:41,000 --> 00:02:48,000
+You now have quite a lot of valuable tools and an idea about what else you might be able to learn to expand
+
+30
+00:02:48,000 --> 00:02:55,000
+upon those skills. You may have been wondering how to deploy your application once you've built it within NetBeans.
+
+31
+00:02:55,000 --> 00:03:01,000
+That's pretty easy to do if you just right-click your project and select Clean and Build.
+
+32
+00:03:01,000 --> 00:03:08,000
+In the directory structure of where your NetBeans projects are saved, there's a folder called dist for
+
+33
+00:03:08,000 --> 00:03:16,000
+distribution, and in that folder you will find a double-clickable, executable JAR file that you can distribute
+
+34
+00:03:16,000 --> 00:59:00,000
+to run your application.
+

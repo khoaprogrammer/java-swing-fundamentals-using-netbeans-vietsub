@@ -1,0 +1,132 @@
+1
+00:00:08,000 --> 00:00:22,000
+Let's begin with the spinner. If we run the application, you can see that the spinner steps through
+
+2
+00:00:22,000 --> 00:00:34,000
+predefined values set in its model. You can set these to include negative numbers as well.
+
+3
+00:00:34,000 --> 00:00:48,000
+Clicking on Model you see that NetBeans defines presets for date, lists, and number values.
+
+4
+00:00:48,000 --> 00:00:58,000
+Let's use numbers, and we'll set the initial value to 1, the minimum value to 1, and the maximum to 10,
+
+5
+00:00:58,000 --> 00:01:10,000
+keep the step size at 1. Now let's have another look. (Running)
+
+6
+00:01:10,000 --> 00:01:21,000
+The spinner steps through our predefined range of numbers, but how do we get these values and use them?
+
+7
+00:01:21,000 --> 00:01:27,000
+We right-click on the spinner, select Events, Change, and stateChanged.
+
+8
+00:01:27,000 --> 00:01:34,000
+This is triggered obviously when the spinner's state changes. The method jSpinner1StateChanged is created
+
+9
+00:01:34,000 --> 00:01:41,000
+and passed an event object. We'll need to cast that object to a JSpinner type.
+
+10
+00:01:41,000 --> 00:01:58,000
+Then we can get the value. (Working) I could get this value as an integer, or, in this case, I'm going to
+
+11
+00:01:58,000 --> 00:02:25,000
+use a string. (Typing) Adding the toString method, we can just print this out to the console. (Working)
+
+12
+00:02:25,000 --> 00:02:31,000
+There's an error flagged here because we need to add the import for JSpinner class.
+
+13
+00:02:31,000 --> 00:02:44,000
+Let's check it out. (Working) Now the values print to the console.
+
+14
+00:02:44,000 --> 00:02:54,000
+Of course you would likely do something more useful with these values.
+
+15
+00:02:54,000 --> 00:03:03,000
+So let's make a little room and add a slider. Sliders are very similar, but you cannot see the immediate output
+
+16
+00:03:03,000 --> 00:03:18,000
+displayed like the spinner. (Working) Some of the nice features of a slider are that you can select the
+
+17
+00:03:18,000 --> 00:03:38,000
+property paintTicks. (Working) Then select majorTickSpacing, which we'll set to 10, and minorTickSpacing,
+
+18
+00:03:38,000 --> 00:04:01,000
+which we'll set to 2. Then when you select paintLabels, and we have very nice feedback for the user. (Working)
+
+19
+00:04:01,000 --> 00:04:06,000
+We still don't have any displayed output here, but instead of just printing these values out to the console
+
+20
+00:04:06,000 --> 00:04:26,000
+again, let's do something more fun. Let's go ahead and add a progress bar. (Working)
+
+21
+00:04:26,000 --> 00:04:34,000
+It's already set for the minimum and maximum values of 0 to 100, so we'll leave that.
+
+22
+00:04:34,000 --> 00:04:40,000
+A nice feature of progress bars is the property called stringPainted, which displays the percentage of
+
+23
+00:04:40,000 --> 00:04:50,000
+completion you are likely already familiar with seeing. (Working)
+
+24
+00:04:50,000 --> 00:05:01,000
+So now let's add the code. Right-click the slider and select Events, Changed, stateChanged, same as before.
+
+25
+00:05:01,000 --> 00:05:09,000
+It created a method called jSlider1StateChanged. The code will be almost the same as before, but this time we'll
+
+26
+00:05:09,000 --> 00:05:24,000
+cast it to JSlider. And this time I want the integer value. (Working)
+
+27
+00:05:24,000 --> 00:05:40,000
+Let me get this window out of the way. (Typing) I could use this value to set the value of the progress bar
+
+28
+00:05:40,000 --> 00:06:04,000
+because it looks for an integer. We have to import the JSlider class, and let's check it out.
+
+29
+00:06:04,000 --> 00:06:18,000
+Now the value outputted from the slider is used as an input for the progress bar. (Working)
+
+30
+00:06:18,000 --> 00:06:33,000
+Now the slider's initial value was set for 50. In this case, I'd rather change that to 0. (Working)
+
+31
+00:06:33,000 --> 00:06:42,000
+Well, let's have another look. Obviously you could use another more practical input value to display in the
+
+32
+00:06:42,000 --> 00:06:50,000
+progress bar in a real life situation. Now you have a very good understanding of the capabilities of spinners,
+
+33
+00:06:50,000 --> 00:59:00,000
+sliders, and progress bars. Next, we'll explore tables and trees.
+

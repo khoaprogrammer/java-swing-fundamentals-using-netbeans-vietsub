@@ -1,0 +1,32 @@
+1
+00:00:02,000 --> 00:00:07,000
+You have mastered a very powerful tool in NetBeans, the GridBag Customizer.
+
+2
+00:00:07,000 --> 00:00:13,000
+This tool is really a game changer as it really makes the process of designing GUIs very easy.
+
+3
+00:00:13,000 --> 00:00:17,000
+You were introduced to Swing's GridBagLayout.
+
+4
+00:00:17,000 --> 00:00:22,000
+You learned how to move and resize components within the customizer.
+
+5
+00:00:22,000 --> 00:00:30,000
+You learned how to use the layout properties Fill, Weight, Insets, and Anchor.
+
+6
+00:00:30,000 --> 00:00:37,000
+You learned how to insert and delete rows and columns and how to add new components to the design.
+
+7
+00:00:37,000 --> 00:00:38,000
+And finally, you learned how
+
+8
+00:00:38,000 --> 00:59:00,000
+to use Sub Containers to more easily control positioning of groups of components.
+

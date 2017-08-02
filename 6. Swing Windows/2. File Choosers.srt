@@ -1,0 +1,144 @@
+1
+00:00:03,000 --> 00:00:10,000
+You're about to learn something very useful. We're going to build a File Chooser and open a file.
+
+2
+00:00:10,000 --> 00:00:17,000
+Let's get right into it, and I'll show you how it's done. I think it's best if we start a new project for this example.
+
+3
+00:00:17,000 --> 00:00:35,000
+So let's choose New Project, Java Application, call it FileChooserProject, deselect Create Main Class,
+
+4
+00:00:35,000 --> 00:00:55,000
+then right-click the project and select New JFrame Form, call the class FileChooserGUI, and the package com.Pluralsight.
+
+5
+00:00:55,000 --> 00:01:15,000
+Let's make the application larger and add a JMenuBar. We won't need the second menu, so right-click it and Delete.
+
+6
+00:01:15,000 --> 00:01:29,000
+Now right-click File and Add From Palette, Menu Item. Right-click to Edit Text, and change it to Open.
+
+7
+00:01:29,000 --> 00:01:47,000
+Might as well double-click the shortcut and make it Ctrl+O. Let's change the variable name to Open.
+
+8
+00:01:47,000 --> 00:01:55,000
+While we're at it, let's create one more for exit, so right-click File, Add From Palette, Menu Item.
+
+9
+00:01:55,000 --> 00:02:07,000
+Right-click Edit Text to exit. Double-click the shortcut, and make it Ctrl+Q.
+
+10
+00:02:07,000 --> 00:02:16,000
+Change the variable name to Exit, as well. We've done this before, so you should be an expert by now.
+
+11
+00:02:16,000 --> 00:02:25,000
+Double-click the Exit menu item, and it creates the ExitActionPerformed method, and we'll type in system.exit(0)
+
+12
+00:02:25,000 --> 00:02:39,000
+as we've done before. Before we move on to the File Chooser, let's also add a text area to our application.
+
+13
+00:02:39,000 --> 00:02:52,000
+Let's stretch it to the max and change its variable name to textArea.
+
+14
+00:02:52,000 --> 00:03:00,000
+Now here's a great trick. It's time to add the File Chooser, but we don't want to just drag it into the design area.
+
+15
+00:03:00,000 --> 00:03:08,000
+We want to create it with code from our open menu item. So here we can right-click the Other Components item
+
+16
+00:03:08,000 --> 00:03:18,000
+in the inspector and select Add From Palette, Swing Windows, File Chooser, and it appears in the inspector.
+
+17
+00:03:18,000 --> 00:03:29,000
+Right-click to change the variable name to fileChooser. Okay, now we can add our code, so double-click the
+
+18
+00:03:29,000 --> 00:03:37,000
+Open menu item, and let's paste this code into the method. NetBeans wants us to import the classes that were
+
+19
+00:03:37,000 --> 00:03:45,000
+added in this code, so click OK. This code creates the fileChooser, reads whichever file you select,
+
+20
+00:03:45,000 --> 00:03:51,000
+and places it into the text area. One more thing before we try it.
+
+21
+00:03:51,000 --> 00:04:01,000
+Go back to the Design mode, select the fileChooser, right-click, and select Properties.
+
+22
+00:04:01,000 --> 00:04:09,000
+Let's add a title to dialogTitle. Let's call it Open Dialog. You can change the initial directory it points
+
+23
+00:04:09,000 --> 00:04:26,000
+to with the currentDirectory property. I want to change mine to C drive.
+
+24
+00:04:26,000 --> 00:04:33,000
+You can also see that this option allows OPEN_DIALOG, SAVE_DIALOG, and custom options as well.
+
+25
+00:04:33,000 --> 00:04:54,000
+Let's leave it as the OPEN_DIALOG for now. Okay, let's close this and run it. (Running)
+
+26
+00:04:54,000 --> 00:05:03,000
+Now go to the File menu and select Open. The fileChooser is created, pointing to the C drive as I wanted.
+
+27
+00:05:03,000 --> 00:05:14,000
+We can now open any sort of file here within reason. Of course not everything is going to look beautiful in
+
+28
+00:05:14,000 --> 00:05:26,000
+our text area. So let's make a change that filters only .txt files.
+
+29
+00:05:26,000 --> 00:05:40,000
+Exit the application, and select Source view. Just below the import statements here, we'll paste this code in.
+
+30
+00:05:40,000 --> 00:05:47,000
+You don't have to fully understand this code to use it, but this creates an inner class that limits the file
+
+31
+00:05:47,000 --> 00:06:02,000
+type to .txt files. I called this class CustomFilter. Now return to Design mode, select the fileChooser,
+
+32
+00:06:02,000 --> 00:06:12,000
+right-click, select Properties, then click here next to the fileFilter property, then select custom code
+
+33
+00:06:12,000 --> 00:06:32,000
+and type new CustomFilter. And that should do it. Now let's run it again. (Running)
+
+34
+00:06:32,000 --> 00:06:39,000
+Click File and Open. Now the fileChooser limits the file types to .txt files.
+
+35
+00:06:39,000 --> 00:06:48,000
+Obviously you could expand this and create a save dialog for your application as well.
+
+36
+00:06:48,000 --> 00:59:00,000
+Next, we'll look at color choosers.
+

@@ -1,0 +1,60 @@
+1
+00:00:02,000 --> 00:00:07,000
+You may have noticed a few weird things as we stretched the application previously.
+
+2
+00:00:07,000 --> 00:00:14,000
+The Browse buttons didn't stay put, and the buttons on the bottom here didn't stay together either.
+
+3
+00:00:14,000 --> 00:00:21,000
+We can fix that by creating something called Sub Containers. So first, let's select the Browse and Street
+
+4
+00:00:21,000 --> 00:00:32,000
+text field, right-click, and select Enclose in Container. This actually encloses them in a JPanel.
+
+5
+00:00:32,000 --> 00:00:45,000
+Let's do the same for City and Browse and also again for the buttons along the bottom here.
+
+6
+00:00:45,000 --> 00:00:56,000
+Now when we stretch the application, things stay where they should.
+
+7
+00:00:56,000 --> 00:01:02,000
+Now we can't select these buttons any longer. Instead, the JPanel is selected.
+
+8
+00:01:02,000 --> 00:01:09,000
+No problem. Now all we have to do is right-click and select Design This Container.
+
+9
+00:01:09,000 --> 00:01:19,000
+Sub Container opens. Let's add another button. Right-click, Insert Column After, right-click the new cell
+
+10
+00:01:19,000 --> 00:01:30,000
+Add Component Button. Now to return to the parent container, all we have to do is right-click and select
+
+11
+00:01:30,000 --> 00:01:38,000
+Design Parent Container. Now we haven't changed the names of these buttons yet, so let's return to the Design
+
+12
+00:01:38,000 --> 00:02:00,000
+area and do so. Right-click, Edit Text, and call this one OK. The next one, Cancel, and the last one, Help.
+
+13
+00:02:00,000 --> 00:02:15,000
+Now let's go back to the customizer (Working) and then design the button container.
+
+14
+00:02:15,000 --> 00:02:28,000
+Let's select all three buttons and adjust the insets a bit. (Working)
+
+15
+00:02:28,000 --> 00:59:00,000
+That's good. Now back to the parent container and preview it. Now everything holds together much better.
+

@@ -1,0 +1,80 @@
+1
+00:00:03,000 --> 00:00:08,000
+The first containers we are going to look at are also the simplest, JPanels.
+
+2
+00:00:08,000 --> 00:00:16,000
+JPanel actually extends component, so it uses all the common properties of components we have already explored.
+
+3
+00:00:16,000 --> 00:00:24,000
+To demonstrate, let's use our SwingComponentProject. Now of course I can drag a new JPanel onto the design
+
+4
+00:00:24,000 --> 00:00:38,000
+area, but since all my components are already present, I can select each set of components I choose to enclose
+
+5
+00:00:38,000 --> 00:00:51,000
+in a JPanel, right-click, and choose Enclose In Panel. As I mentioned, panels have all the common properties
+
+6
+00:00:51,000 --> 00:00:58,000
+of other components, such as background and foreground colors, borders, etc.
+
+7
+00:00:58,000 --> 00:01:05,000
+Mostly JPanels are useful for dividing sections of your application making the design cleaner and more
+
+8
+00:01:05,000 --> 00:01:14,000
+intuitive for the user. We haven't discussed layouts specifically, but here's a property for applying specific
+
+9
+00:01:14,000 --> 00:01:19,000
+layouts to each panel. Please explore layouts further if you wish.
+
+10
+00:01:19,000 --> 00:01:24,000
+Now the most common and useful property of a panel is the border property.
+
+11
+00:01:24,000 --> 00:01:36,000
+Let's select Border and then Titled Border and add a title called Personal Info and change the font to Arial,
+
+12
+00:01:36,000 --> 00:01:59,000
+Bold, 12, and the border type to Etched. (Working) Let's run the application and see what it looks like.
+
+13
+00:01:59,000 --> 00:02:04,000
+I think you'll agree that panels can clean up the look of your application dramatically.
+
+14
+00:02:04,000 --> 00:02:13,000
+Now to clean up this further, I might like to lose the Bio label here and instead enclose the text area in a
+
+15
+00:02:13,000 --> 00:02:42,000
+Titled Border JPanel and title it Bio. So Enclose In Panel, resize the panel, resize the text area a bit.
+
+16
+00:02:42,000 --> 00:03:07,000
+We'll change the Panel property to Titled Border, add the title Bio, change the font, and make sure it's the Etched Border.
+
+17
+00:03:07,000 --> 00:03:16,000
+I might also enclose these radio buttons as well and call them Marital Status.
+
+18
+00:03:16,000 --> 00:03:33,000
+So again Enclose In Panel, resize the panel, change the border to Titled Border once again, add the title
+
+19
+00:03:33,000 --> 00:03:51,000
+Marital Status, change the font, and again make sure it's the Etched Border.
+
+20
+00:03:51,000 --> 00:59:00,000
+Now, let's run it and see what it looks like. (Running) Please feel free to play around and design your own version.
+

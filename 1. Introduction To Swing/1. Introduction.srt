@@ -1,0 +1,100 @@
+1
+00:00:00,000 --> 00:00:08,000
+Hi. This is Rusty Lowery from Pluralsight. Welcome to Java Swing Development Using NetBeans.
+
+2
+00:00:08,000 --> 00:00:14,000
+In this course, you're going to learn how to use NetBeans Integrated Development Environment or IDE to
+
+3
+00:00:14,000 --> 00:00:22,000
+program desktop applications using Java Swing. I think you'll find this process is rather easy to learn,
+
+4
+00:00:22,000 --> 00:00:27,000
+yet the skills and concepts you will acquire are quite powerful and will increase your skillset as a
+
+5
+00:00:27,000 --> 00:00:30,000
+programmer in a big way.
+
+6
+00:00:30,000 --> 00:00:36,000
+I used to program Swing applications manually, but I was blown away when I discovered how easy NetBeans makes
+
+7
+00:00:36,000 --> 00:00:43,000
+this process in comparison. I assume that you have some familiarity with some sort of programming language,
+
+8
+00:00:43,000 --> 00:00:49,000
+but most of what we'll be doing here will not require an in-depth understanding of Java, although this
+
+9
+00:00:49,000 --> 00:00:53,000
+course can also benefit a seasoned programmer.
+
+10
+00:00:53,000 --> 00:00:59,000
+You will learn how to use the powerful NetBeans GUI builder to quickly develop complex user interfaces with
+
+11
+00:00:59,000 --> 00:01:05,000
+little effort allowing you more time to build the application logic instead.
+
+12
+00:01:05,000 --> 00:01:10,000
+First, we'll start with a short introduction to Swing's architecture and features.
+
+13
+00:01:10,000 --> 00:01:15,000
+Then we'll move on to explore NetBeans and its fantastic GUI builder.
+
+14
+00:01:15,000 --> 00:01:21,000
+We'll then jump right in and create a fully-functional application to give you a very good idea of just what
+
+15
+00:01:21,000 --> 00:01:26,000
+NetBeans and Swing can accomplish in a very short period of time.
+
+16
+00:01:26,000 --> 00:01:34,000
+Then we'll dig deeper into each of Swing's components, containers, menus, and windows and explore what they offer.
+
+17
+00:01:34,000 --> 00:01:40,000
+Following that, we'll explore a NetBeans tool called GridBag Customizer that is very cool.
+
+18
+00:01:40,000 --> 00:01:46,000
+It makes the job of customizing your layouts and components very easy, and I think you will begin to really
+
+19
+00:01:46,000 --> 00:01:52,000
+understand the power NetBeans tools can offer. Lastly, we will move into some more advanced topics,
+
+20
+00:01:52,000 --> 00:02:00,000
+such as setting up a database to interact with an application and binding data to table views.
+
+21
+00:02:00,000 --> 00:02:06,000
+NetBeans makes it easy to interface with any sort of database. Our focus will remain mainly on the Swing GUI
+
+22
+00:02:06,000 --> 00:02:12,000
+view, so I'll be providing the database code. This course is a great
+
+23
+00:02:12,000 --> 00:02:19,000
+entry point into the world of Java Swing. If you wish to continue your journey further, then you are in luck
+
+24
+00:02:19,000 --> 00:02:23,000
+because there are more advanced courses covering Swing right here on Pluralsight.
+
+25
+00:02:23,000 --> 00:59:00,000
+Now let's get started.
+

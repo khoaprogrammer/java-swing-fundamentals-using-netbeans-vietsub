@@ -1,0 +1,136 @@
+1
+00:00:03,000 --> 00:00:13,000
+Now let's learn about lists and combo boxes. First, we'll need to make a bit more room to add the new components.
+
+2
+00:00:13,000 --> 00:00:25,000
+Let's drag a list onto the application and resize it a bit. There's an odd bug with NetBeans.
+
+3
+00:00:25,000 --> 00:00:33,000
+I'm looking to alter a property called model, but it only shows up after I deselect the list, then reselect it.
+
+4
+00:00:33,000 --> 00:00:41,000
+There it is. Now it shows up. Of course you can apply all of the common properties to list we've mentioned previously.
+
+5
+00:00:41,000 --> 00:00:47,000
+Let's click on the model, and as you'll see, these are the list's items.
+
+6
+00:00:47,000 --> 00:01:06,000
+Let's change the items to say favorite colors. (Working) Run the application, and you see it's not only possible
+
+7
+00:01:06,000 --> 00:01:14,000
+to select one item in the list, but also by control clicking you can select multiple items.
+
+8
+00:01:14,000 --> 00:01:26,000
+Let's add an event listener to this list. We right-click Events, ListSelection, valueChanged.
+
+9
+00:01:26,000 --> 00:01:33,000
+This creates the method jList1ValueChanged. For now, let's just print out a string to the console when an
+
+10
+00:01:33,000 --> 00:01:56,000
+event is triggered. (Typing) We'll run it. You can see that two events are triggered.
+
+11
+00:01:56,000 --> 00:02:03,000
+This is happening because although a new event is triggered by the user selecting an item, also an event is
+
+12
+00:02:03,000 --> 00:02:09,000
+triggered because another item is deselected. This is the way list events are designed.
+
+13
+00:02:09,000 --> 00:02:18,000
+We can get around this problem by using a method in the ListSelectionEvent called getValueIsAdjusting.
+
+14
+00:02:18,000 --> 00:02:30,000
+This will trigger only once. (Working) Now just to double-check, we'll print to the console once more,
+
+15
+00:02:30,000 --> 00:02:55,000
+(Working) run it again, and yes it's only triggering once. Now let's see a more practical example.
+
+16
+00:02:55,000 --> 00:03:05,000
+We'll lose the console print statement, go back to the Design view, and add a label to print selection results.
+
+17
+00:03:05,000 --> 00:03:33,000
+Back to Source view, and I'll say jLabel1.setText jList1.getSelectedValue, (Working) and we'll have to change
+
+18
+00:03:33,000 --> 00:03:51,000
+this to a string value using the toString method. Run it again.
+
+19
+00:03:51,000 --> 00:03:58,000
+And as we select values in the list, they are written to the label, but what if I select multiple values?
+
+20
+00:03:58,000 --> 00:04:13,000
+This doesn't work. I can change the method to getSelectedValuesList, which returns an array of strings instead.
+
+21
+00:04:13,000 --> 00:04:27,000
+Run it, and now it returns single values and also multiple values.
+
+22
+00:04:27,000 --> 00:04:39,000
+Okay, let's lose the label and its related code. NetBeans doesn't allow me to delete the entire method because
+
+23
+00:04:39,000 --> 00:04:48,000
+that was generated code. But that's okay. I can just delete the body of the method instead.
+
+24
+00:04:48,000 --> 00:04:58,000
+Now let's add some combo boxes. Let's add three to represent a date, day, month, and year.
+
+25
+00:04:58,000 --> 00:05:05,000
+Once again, for the model property to appear, I must deselect and select.
+
+26
+00:05:05,000 --> 00:05:10,000
+Clicking on model allows me to edit the items in the combo box.
+
+27
+00:05:10,000 --> 00:05:43,000
+I'll put 1 through 12 for the months, (Typing) just a few for the days, I'm not going to type 30, (Typing)
+
+28
+00:05:43,000 --> 00:06:22,000
+and just a few options for year. (Typing) Run the application, and you can see how combo boxes appear. (Working)
+
+29
+00:06:22,000 --> 00:06:34,000
+Now if we want to listen to events from a combo box, we use our old friend, actionPerformed.
+
+30
+00:06:34,000 --> 00:06:53,000
+We get the item selected with this code, this.jComboBox3.getSelectedItem.
+
+31
+00:06:53,000 --> 00:07:04,000
+We'll want this as a string, so let's create a String variable and call it selection.
+
+32
+00:07:04,000 --> 00:07:22,000
+Then we'll need to add the toString method. Let's print this out to the console just to verify. (Typing)
+
+33
+00:07:22,000 --> 00:07:40,000
+Let's run it, (waiting) and the selected items are printed. Next up, we'll look at spinners, sliders,
+
+34
+00:07:40,000 --> 00:59:00,000
+and progress bars. Now it's time to explore spinners, sliders, and progress bars.
+

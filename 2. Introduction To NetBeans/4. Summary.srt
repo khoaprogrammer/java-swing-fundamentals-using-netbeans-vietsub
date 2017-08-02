@@ -1,0 +1,40 @@
+1
+00:00:03,000 --> 00:00:10,000
+In this module, you've learned about the NetBeans IDE and the Java Development Kit that it requires.
+
+2
+00:00:10,000 --> 00:00:17,000
+You've learned about the Palette, Properties, Design, and Inspector panes of NetBeans.
+
+3
+00:00:17,000 --> 00:00:25,000
+You've seen the advantage of NetBeans creating automatically generated code, such as the initComponents
+
+4
+00:00:25,000 --> 00:00:30,000
+method that sets up the window layout and window closing code automatically.
+
+5
+00:00:30,000 --> 00:00:36,000
+You have been introduced to Swing's labels, text fields, and buttons.
+
+6
+00:00:36,000 --> 00:00:43,000
+You've learned about event listeners and how to use the actionPerformed method for a button.
+
+7
+00:00:43,000 --> 00:00:50,000
+You've learned about how to retrieve text from a text field and parse it to a number, and you've learned to set
+
+8
+00:00:50,000 --> 00:00:58,000
+text in a label. We've even introduced a very useful Java class called DecimalFormat.
+
+9
+00:00:58,000 --> 00:01:07,000
+And you've been introduced to just one of Swing's dialog windows using the JOptionPane.showMessageDialog method.
+
+10
+00:01:07,000 --> 00:59:00,000
+Now let's learn more about each of Swing's components.
+

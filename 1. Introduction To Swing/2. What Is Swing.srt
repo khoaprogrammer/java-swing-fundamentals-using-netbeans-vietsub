@@ -1,0 +1,108 @@
+1
+00:00:02,000 --> 00:00:10,000
+Before we get started writing our first application, let's talk for a moment about just exactly what Swing is.
+
+2
+00:00:10,000 --> 00:00:19,000
+In short, Swing is a powerful, customizable set of graphical components used to create Java desktop applications.
+
+3
+00:00:19,000 --> 00:00:25,000
+It's a GUI toolkit containing a wide array of graphical components that are independent of the underlying
+
+4
+00:00:25,000 --> 00:00:33,000
+operating system because they are created at runtime. Now I think the best way to demonstrate Swing's
+
+5
+00:00:33,000 --> 00:00:40,000
+capabilities is to check out an actual application. Let me show you a great example application provided on
+
+6
+00:00:40,000 --> 00:00:42,000
+the Java website.
+
+7
+00:00:42,000 --> 00:00:51,000
+Open up a browser, go to Google, and search for java swingset download.
+
+8
+00:00:51,000 --> 00:00:59,000
+Click on the first item in the list, SwingSet3.jnlp. By the way, I'm sort of skipping ahead here.
+
+9
+00:00:59,000 --> 00:01:06,000
+This demo application requires that you have at least the Java Runtime Environment installed on your system
+
+10
+00:01:06,000 --> 00:01:15,000
+or it won't run. If you don't have it installed, you can first search Google for just java download and then
+
+11
+00:01:15,000 --> 00:01:22,000
+Download Free Java Software and install it. Now I'm assuming that you already have Java installed.
+
+12
+00:01:22,000 --> 00:01:33,000
+We're interested in SwingSet3.jnlp, so click the link, and the application will download to your computer.
+
+13
+00:01:33,000 --> 00:01:46,000
+We'll quit the browser, we'll go over here and double-click on SwingSet3.jnlp, and the application will run.
+
+14
+00:01:46,000 --> 00:01:50,000
+Please take some time to explore this application for a few minutes on your own.
+
+15
+00:01:50,000 --> 00:02:00,000
+You can have a look at various types of containers and components Swing offers.
+
+16
+00:02:00,000 --> 00:02:08,000
+You can even view the source code down here if you wish.
+
+17
+00:02:08,000 --> 00:02:15,000
+Let's talk briefly about a history of Swing. Swing is one of five libraries included in the Java Foundation
+
+18
+00:02:15,000 --> 00:02:25,000
+Classes or JFC, along with the Abstract Windows Toolkit or AWT, the Accessibility API, the 2D API,
+
+19
+00:02:25,000 --> 00:02:34,000
+and the enhanced support for Drag and Drop functionality. The AWT was Java's first solution for functionality
+
+20
+00:02:34,000 --> 00:02:42,000
+necessary to operate a windowed application. AWT still is at the core of Swing, which was built on top of
+
+21
+00:02:42,000 --> 00:02:51,000
+AWT, enhancing it dramatically. The accessibility API provides an interface of your application's components
+
+22
+00:02:51,000 --> 00:02:58,000
+to assisted technology, such as audible text readers or brail keyboards.
+
+23
+00:02:58,000 --> 00:03:06,000
+The 2D API contains classes used for painting shapes, fonts, or colors on a 2D surface.
+
+24
+00:03:06,000 --> 00:03:13,000
+Drag and drop allows users to transfer elements between Java applications and native applications.
+
+25
+00:03:13,000 --> 00:03:20,000
+But we're going to focus solely on the Swing elements of the JFC, but you may need to be aware of these
+
+26
+00:03:20,000 --> 00:03:24,000
+related APIs and how they interface with Swing. Next, we'll take a
+
+27
+00:03:24,000 --> 00:59:00,000
+look at some of Swing's popular features.
+

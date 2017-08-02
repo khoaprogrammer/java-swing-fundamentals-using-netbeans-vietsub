@@ -1,0 +1,36 @@
+1
+00:00:02,000 --> 00:00:08,000
+You've learned quite a lot about Swing's main components. You now have enough knowledge to build GUI
+
+2
+00:00:08,000 --> 00:00:19,000
+interfaces with confidence. You now know how to use labels, text components, buttons, lists, combo boxes,
+
+3
+00:00:19,000 --> 00:00:28,000
+spinners, sliders, progress bars, tables, and trees. You know how to set their common properties,
+
+4
+00:00:28,000 --> 00:00:35,000
+and you have learned how to write code within the generated event methods to make use of user input for
+
+5
+00:00:35,000 --> 00:00:42,000
+buttons using the ActionPerformed method, for lists using the ValueChanged method, for combo boxes using
+
+6
+00:00:42,000 --> 00:00:51,000
+the ActionPerfomed method, for spinners and sliders using the StateChanged method, and how to set inputs to
+
+7
+00:00:51,000 --> 00:00:54,000
+a progress bar using the setValue method.
+
+8
+00:00:54,000 --> 00:01:00,000
+You've learned how to represent basic data using tables and tress as well.
+
+9
+00:01:00,000 --> 00:59:00,000
+There's still a lot more to come. Next, we'll have a look at Swing containers.
+

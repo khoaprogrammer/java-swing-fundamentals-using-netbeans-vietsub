@@ -1,0 +1,60 @@
+1
+00:00:00,000 --> 00:00:07,000
+To understand Swing, you need to gain a basic understanding of containers.
+
+2
+00:00:07,000 --> 00:00:15,000
+Containers in Swing are used to group components together. Each container can set a different sort of layout
+
+3
+00:00:15,000 --> 00:00:19,000
+manager for its component. Containers include
+
+4
+00:00:19,000 --> 00:00:31,000
+JFrame, JWindow, JDialog, JPanel, JInternalFrame, and JApplet. Applets are programs designed to be viewed
+
+5
+00:00:31,000 --> 00:00:38,000
+within a web browser. We will not spend time with them, and instead focus on other containers.
+
+6
+00:00:38,000 --> 00:00:49,000
+The containers JFrame, JWindow, JDialog, and JInternalFrame all contain an instance of a class called JRootPane.
+
+7
+00:00:49,000 --> 00:00:57,000
+JRootPane is a container that also contains a component called JLayeredPane, which includes the components
+
+8
+00:00:57,000 --> 00:01:05,000
+JMenuBar and a contentPane. JLayeredPane consists of these layers,
+
+9
+00:01:05,000 --> 00:01:14,000
+allowing components to be overlapped. At the bottom is the Frame_Content_Layer, which contains the JMenuBar
+
+10
+00:01:14,000 --> 00:01:21,000
+and the contentPane. Next, is the Default_Layer where most components are added.
+
+11
+00:01:21,000 --> 00:01:26,000
+Then the Palette_Layer where floating toolbars or palettes can be added.
+
+12
+00:01:26,000 --> 00:01:35,000
+Next, the Modal_Layer or Modal pop-up windows; then the PopUp_Layer for pop-ups and tooltips.
+
+13
+00:01:35,000 --> 00:01:42,000
+Lastly, the Drag_Layer for objects dragged from outside the application.
+
+14
+00:01:42,000 --> 00:01:47,000
+We're only covering the basics of containers here, but it will give you the concepts necessary to understand
+
+15
+00:01:47,000 --> 00:59:00,000
+what we are going to explore. Let's move on and look at each of the containers.
+

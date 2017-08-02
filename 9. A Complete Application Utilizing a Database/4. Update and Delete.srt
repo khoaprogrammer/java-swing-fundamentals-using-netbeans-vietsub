@@ -1,0 +1,196 @@
+1
+00:00:02,000 --> 00:00:08,000
+I hope you're still with me as we dive into issues that are a bit more complex.
+
+2
+00:00:08,000 --> 00:00:14,000
+Realistically, up until now, most solutions have been taken care of with just a few lines of code.
+
+3
+00:00:14,000 --> 00:00:20,000
+I'm afraid that now we're going to move into a little more advanced coding and it may be a little challenging
+
+4
+00:00:20,000 --> 00:00:27,000
+for some of you, but please bear with me, I'll explain the code as best possible and it'll be a valuable tool
+
+5
+00:00:27,000 --> 00:00:34,000
+you can use in the future. Now let's move forward and talk about updating or deleting records in our table.
+
+6
+00:00:34,000 --> 00:00:41,000
+From the user's standpoint, it would be nice if he or she could simply click on a row in our contacts table
+
+7
+00:00:41,000 --> 00:00:49,000
+and have that row's data appear in the GridBagGUI's form for the user to then update or delete.
+
+8
+00:00:49,000 --> 00:00:57,000
+To make this happen, we can use the ListSelectionListener that fires an event called valueChanged whenever
+
+9
+00:00:57,000 --> 00:01:05,000
+a table row is clicked upon. Now I'm not going to make you watch me type all this code, so I've already written
+
+10
+00:01:05,000 --> 00:01:14,000
+it and we'll just go over it together. As you can see I implemented the ListSelectionListener interface.
+
+11
+00:01:14,000 --> 00:01:22,000
+In the ContactsTableGUI constructor, we are creating a ListSelectionModel based upon our table,
+
+12
+00:01:22,000 --> 00:01:31,000
+which is still called jTable1, and adding the listener. Now whenever a row of the table is clicked,
+
+13
+00:01:31,000 --> 00:01:42,000
+this method, valueChanged, will be called. I'm using the getValueIsAdjusting method we used once before to
+
+14
+00:01:42,000 --> 00:01:51,000
+make sure only the mouseDown event is triggered from the click and not both mouseDown and mouseUp.
+
+15
+00:01:51,000 --> 00:01:58,000
+Here, I look at the TableModel to figure out which row was clicked and it returns the value of that row's
+
+16
+00:01:58,000 --> 00:02:10,000
+primary key, the ID field. Now I can call the findById method of our DBManager class, which returns a Contacts
+
+17
+00:02:10,000 --> 00:02:19,000
+bean loaded with that data. Then we call the DBManager.close method.
+
+18
+00:02:19,000 --> 00:02:26,000
+I then call the constructor of the GridBagGUI's window passing the Contacts bean it will use to populate the
+
+19
+00:02:26,000 --> 00:02:37,000
+fields of the form. And of course, we will have to also close the ContactsTable window just as we did with insert.
+
+20
+00:02:37,000 --> 00:02:46,000
+Are you still with me? A little bit complex, but a useful feature that you may be able to use in the future.
+
+21
+00:02:46,000 --> 00:02:53,000
+So let's look now at the GridBagGUI constructor and you see how it uses the properties of the Contacts bean
+
+22
+00:02:53,000 --> 00:03:00,000
+to populate the text fields. Now I had to add something extra here.
+
+23
+00:03:00,000 --> 00:03:07,000
+Before, I was passing the information in the Contacts bean directly to the form, then passing that information
+
+24
+00:03:07,000 --> 00:03:14,000
+in another Contacts bean to the Update or Delete method. The problem with that is that the form doesn't
+
+25
+00:03:14,000 --> 00:03:23,000
+display the ID field, so it gets lost in the process. So to fix that, I created a local copy of the Contacts
+
+26
+00:03:23,000 --> 00:03:30,000
+bean, which does contain the ID field, and we use that when updating or deleting.
+
+27
+00:03:30,000 --> 00:03:41,000
+I told you this was going to be a little more complicated. Let's run it and see what happens.
+
+28
+00:03:41,000 --> 00:03:49,000
+Click on a row in the table, and voila! The form appears filled with that row's data.
+
+29
+00:03:49,000 --> 00:03:55,000
+Now we just need to add an actionPerformed method to our Update button.
+
+30
+00:03:55,000 --> 00:04:04,000
+To save time, I've already done this and written the code. In this method, first we use the local copy of the
+
+31
+00:04:04,000 --> 00:04:13,000
+Contacts bean containing the ID field, then we set each of its other values to the new information that was
+
+32
+00:04:13,000 --> 00:04:22,000
+possibly changed in the form, then we create an instance of DBManager and call its Update method passing the
+
+33
+00:04:22,000 --> 00:04:30,000
+Contacts bean as an argument. And we call DBmanager.close to clean up and we recreated the ContactsTable
+
+34
+00:04:30,000 --> 00:04:53,000
+window and close this one. Let's try it out. Click a table row, change some info here, and click Update.
+
+35
+00:04:53,000 --> 00:05:01,000
+Our data has changed in the table. Everything is already in place to also delete a record, except we need to
+
+36
+00:05:01,000 --> 00:05:09,000
+create the Delete button's actionPerformed method. I've already done this as well.
+
+37
+00:05:09,000 --> 00:05:17,000
+In this case, all we need to do is create an instance of DBManager and call its Delete method passing the
+
+38
+00:05:17,000 --> 00:05:26,000
+Contacts bean as an argument, and then call DBManager.close. Then of course dealing with the closing and
+
+39
+00:05:26,000 --> 00:05:36,000
+opening of the windows as before. It was necessary to make a change to the DBManager's Delete method.
+
+40
+00:05:36,000 --> 00:05:44,000
+Let's have a look and I'll explain. Before, I was just passing the Contacts bean and calling the EntityManager's
+
+41
+00:05:44,000 --> 00:05:51,000
+Remove method. It is necessary to first find that record then remove it.
+
+42
+00:05:51,000 --> 00:05:59,000
+An error was appearing initially because the two Contacts beans were in different contexts.
+
+43
+00:05:59,000 --> 00:06:04,000
+This is an issue that is too involved to explain here, but nevertheless the code works now because the two
+
+44
+00:06:04,000 --> 00:06:13,000
+Contacts beans are in the same context. These are the sorts of issues that pop up in the world of software engineering.
+
+45
+00:06:13,000 --> 00:06:29,000
+If it were easy, everyone would do it. Let's try this now. Click a row, the record appears in the form.
+
+46
+00:06:29,000 --> 00:06:36,000
+Actually, the user could alter the fields here, but it won't matter if we click the Delete button.
+
+47
+00:06:36,000 --> 00:06:44,000
+You could also add an Are you sure dialog here, but for now, we're just going to click Delete and you see our
+
+48
+00:06:44,000 --> 00:06:51,000
+record is gone. I hope all this wasn't too complex. Nevertheless, this is knowledge you now have and will
+
+49
+00:06:51,000 --> 00:59:00,000
+surely need as an application developer.
+

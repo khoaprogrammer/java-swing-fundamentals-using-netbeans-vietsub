@@ -1,0 +1,48 @@
+1
+00:00:02,000 --> 00:00:08,000
+Now that you have learned how to use NetBeans to generate Swing code for you, it would also be a very valuable
+
+2
+00:00:08,000 --> 00:00:12,000
+skill to learn how to actually hand code Swing yourself.
+
+3
+00:00:12,000 --> 00:00:19,000
+You're in luck because there is another course here on Pluralsight that teaches exactly that.
+
+4
+00:00:19,000 --> 00:00:22,000
+I hope you have taken some time along the way to have a
+
+5
+00:00:22,000 --> 00:00:28,000
+look at the generated code and familiarized yourself with it.
+
+6
+00:00:28,000 --> 00:00:35,000
+Now there are a few areas of Swing that I did not cover, number one being layouts since NetBeans takes care
+
+7
+00:00:35,000 --> 00:00:42,000
+of most of that for you, but if you learn to code Swing, you will definitely need to spend time learning
+
+8
+00:00:42,000 --> 00:00:49,000
+about the various layouts Swing offers and how to use them. Other areas you may want to explore further
+
+9
+00:00:49,000 --> 00:00:59,000
+include Swing's Undo Management classes, Accessibility classes, or assistive technologies, Print Utilities,
+
+10
+00:00:59,000 --> 00:01:09,000
+and 2D and 3D drawing features. There are even add-ons for advanced charting and audio as well.
+
+11
+00:01:09,000 --> 00:01:14,000
+Well I hope you've enjoyed the course and have learned some valuable information.
+
+12
+00:01:14,000 --> 00:59:00,000
+Until next time.
+

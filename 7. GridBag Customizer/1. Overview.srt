@@ -1,0 +1,168 @@
+1
+00:00:00,000 --> 00:00:07,000
+There's an amazing tool in NetBeans called the GridBag Customizer.
+
+2
+00:00:07,000 --> 00:00:12,000
+It makes the process of building a complex GUI very easy and painless.
+
+3
+00:00:12,000 --> 00:00:14,000
+The tool uses a Swing layout called
+
+4
+00:00:14,000 --> 00:00:23,000
+GridBagLayout, which is probably the most powerful layout Swing offers, yet it can be quite complex to code by hand.
+
+5
+00:00:23,000 --> 00:00:29,000
+GridBagLayout is basically the same as an HTML table with rows and columns.
+
+6
+00:00:29,000 --> 00:00:37,000
+Components within each cell can span rows or columns. Components can anchor into different locations within
+
+7
+00:00:37,000 --> 00:00:42,000
+each cell, and components can dictate their own spacing within each cell.
+
+8
+00:00:42,000 --> 00:00:50,000
+I've already built a new project called GridBagProject and built a basic GUI with a few labels, text fields,
+
+9
+00:00:50,000 --> 00:00:59,000
+buttons, and a combo box. I've done no layout here whatsoever, just placed the components all in a row.
+
+10
+00:00:59,000 --> 00:01:07,000
+We'll use the GridBag Customizer for all of the layout. To begin, we'll need to right-click the JFrame and
+
+11
+00:01:07,000 --> 00:01:17,000
+Set Layout to Grid Bag Layout first. Then we can right-click the JFrame once again and select Customize Layout.
+
+12
+00:01:17,000 --> 00:01:23,000
+This will bring up the customizer. At first glance, this thing looks like it could fly a rocket ship,
+
+13
+00:01:23,000 --> 00:01:32,000
+but it's really pretty easy to use. You see our components on the right and the numbered rows and columns of the layout.
+
+14
+00:01:32,000 --> 00:01:39,000
+There is a toolbar at the top of the window with several functions we'll get to later, and on the left,
+
+15
+00:01:39,000 --> 00:01:47,000
+if we select a component, is the property editor for layout values of each component.
+
+16
+00:01:47,000 --> 00:01:57,000
+These values can either be set directly in the area at the bottom or adjusted manually with the arrows in the above section.
+
+17
+00:01:57,000 --> 00:02:05,000
+So let's try to make something out of our GUI. Let's start by dragging the Last Name label to the row below,
+
+18
+00:02:05,000 --> 00:02:20,000
+which is automatically created, then the text field, the Street label, it's text field, the Browse button,
+
+19
+00:02:20,000 --> 00:02:37,000
+the City label, it's text field and another Browse button, the State label, and lastly the combo box.
+
+20
+00:02:37,000 --> 00:02:46,000
+Now let's select the First and Last Name text fields and drag their boundaries so that they span two columns.
+
+21
+00:02:46,000 --> 00:02:54,000
+Then set their Fill property to Horizontal so that they fill the cells completely.
+
+22
+00:02:54,000 --> 00:03:00,000
+Let's then select the Street and City text fields and do the same.
+
+23
+00:03:00,000 --> 00:03:07,000
+Now we have a lot of extra columns here that we don't need, so let's right-click and select Delete Column for
+
+24
+00:03:07,000 --> 00:03:24,000
+each of them. (Working) I'm going to leave the 3 column for future use.
+
+25
+00:03:24,000 --> 00:03:30,000
+There's a button in the toolbar that enables us to preview the design quite easily.
+
+26
+00:03:30,000 --> 00:03:37,000
+It's right here. Let's have a look. It looks okay, but if I stretch the window you see that all of the
+
+27
+00:03:37,000 --> 00:03:44,000
+components remain their original size and stay centered in the JFrame.
+
+28
+00:03:44,000 --> 00:03:48,000
+We can fix that with a property called Weight.
+
+29
+00:03:48,000 --> 00:03:57,000
+There are weight parameters for X and Y, X representing row and Y representing column.
+
+30
+00:03:57,000 --> 00:04:06,000
+I want the text fields to stretch along with the window, so let's select all of them, Ctrl+Click,
+
+31
+00:04:06,000 --> 00:04:17,000
+and change their Weight X property value to 1.0. Weights are described with values between 0 and 1.
+
+32
+00:04:17,000 --> 00:04:26,000
+Now let's preview the application again, and the text fields stretch appropriately.
+
+33
+00:04:26,000 --> 00:04:34,000
+Now here's another problem. The State combo box sort of floats out to the center, and also you can see that
+
+34
+00:04:34,000 --> 00:04:43,000
+the labels aren't really aligned very well on the left here. We can fix all this with the Anchor property.
+
+35
+00:04:43,000 --> 00:04:56,000
+So let's select all of those, then set the Anchor property to Line Start and see how that works.
+
+36
+00:04:56,000 --> 00:05:03,000
+Let's preview it. Now the labels are aligned, and the combo box stays where it should.
+
+37
+00:05:03,000 --> 00:05:12,000
+Now our application still looks a bit cramped. We could do with a bit of spacing.
+
+38
+00:05:12,000 --> 00:05:28,000
+So let's select all of the components (Working) and select the ellipsis next to the Insets property.
+
+39
+00:05:28,000 --> 00:05:36,000
+Here we can add spacing to any side of the components. Let's add 5 pixels on the top and left.
+
+40
+00:05:36,000 --> 00:05:50,000
+I could alternatively use the Insets arrows to manually change these values as well.
+
+41
+00:05:50,000 --> 00:05:57,000
+Let's preview it once again. Now the components have a little more breathing room.
+
+42
+00:05:57,000 --> 00:59:00,000
+Next we'll move on to some more advanced techniques. Now what if we want to add some extra components to our application?
+

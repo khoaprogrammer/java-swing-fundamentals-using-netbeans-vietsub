@@ -1,0 +1,128 @@
+1
+00:00:06,000 --> 00:00:13,000
+It's easy to do in the GridBag Customizer, so right-click and select Customize Layout.
+
+2
+00:00:13,000 --> 00:00:20,000
+Now I want to add phone numbers to this application. Things might look better if we label and separate these
+
+3
+00:00:20,000 --> 00:00:29,000
+sections as well. Adding panels might be too complex at this point, but we can easily add a label and a separator.
+
+4
+00:00:29,000 --> 00:00:39,000
+So first we'll need to right-click the first row and select Insert Row Before to make some room for these new components.
+
+5
+00:00:39,000 --> 00:00:46,000
+Then we can right-click the first cell and select Add Component, Swing Containers, Label.
+
+6
+00:00:46,000 --> 00:00:57,000
+Then the next cell, Add Components, Swing Controls, Separator, and let's stretch that to span over two columns.
+
+7
+00:00:57,000 --> 00:01:04,000
+Then right-click the fifth row and select Insert Row After. Then let's add another label for the phone
+
+8
+00:01:04,000 --> 00:01:16,000
+number section and then another separator and also stretch that across two columns.
+
+9
+00:01:16,000 --> 00:01:31,000
+Now let's add some phone number labels and fields. Right-click, Insert Row After, Add Components, Label.
+
+10
+00:01:31,000 --> 00:01:53,000
+Add Component, Text Field. That one could be for home number. And now add another for the work number,
+
+11
+00:01:53,000 --> 00:02:19,000
+then another for a cell number. (Working) And let's make a fourth for a Skype number.
+
+12
+00:02:19,000 --> 00:02:26,000
+Now we are unable to change the actual component properties here, so we'll have to go back to the Design area
+
+13
+00:02:26,000 --> 00:02:45,000
+to do that. Let's change this label to Contact and set it to Bold, and this label to Phone and also to Bold.
+
+14
+00:02:45,000 --> 00:03:05,000
+Let's change the first label for Home, then the next to Work, the next to Cell, and the last to Skype.
+
+15
+00:03:05,000 --> 00:03:20,000
+Let's empty the text within the text fields too. They shrink, but no worries, we have layout tools for that.
+
+16
+00:03:20,000 --> 00:03:29,000
+Okay, we have some layout properties to edit. Start the customizer again, but first let's set the text fields
+
+17
+00:03:29,000 --> 00:03:47,000
+to Horizontal fill and stretch them over two columns. Let's give all of our new components a little extra
+
+18
+00:03:47,000 --> 00:04:09,000
+space with the Insets property, (Working) the same as the others, five on the top and left.
+
+19
+00:04:09,000 --> 00:04:24,000
+While we're at it, let's anchor them all to Line Start. Time to preview what we've done.
+
+20
+00:04:24,000 --> 00:04:31,000
+Stretching the application seems to work well, but what if we want to redesign a bit?
+
+21
+00:04:31,000 --> 00:04:41,000
+That's easy to do. The number 3 column seems to have disappeared, so let's add that again, and let's insert
+
+22
+00:04:41,000 --> 00:05:00,000
+a final row here as well, then add two buttons. It might look nicer if we move the Cell and Skype phone
+
+23
+00:05:00,000 --> 00:05:07,000
+numbers, so first let's make all of the text fields only one column.
+
+24
+00:05:07,000 --> 00:05:29,000
+Now we have space to move the Cell and Skype numbers up here. Now we have too many rows, so we can delete those.
+
+25
+00:05:29,000 --> 00:05:42,000
+And now we can stretch the name fields over three columns, move the Browse buttons over, and stretch City
+
+26
+00:05:42,000 --> 00:05:56,000
+and State as well. Oh, also the separators need stretching. The Cell and Skype labels might look better if
+
+27
+00:05:56,000 --> 00:06:08,000
+we align them to the right using the Anchor property. We select Line End.
+
+28
+00:06:08,000 --> 00:06:23,000
+And the buttons down here also are a little cramped, so let's increase the insets for them. (Working)
+
+29
+00:06:23,000 --> 00:06:32,000
+All the components above could do with some space on the right, so let's select them and increase the insets.
+
+30
+00:06:32,000 --> 00:06:44,000
+Now that looks pretty good. Let's preview it and stretch it. Oh, the phone fields don't stretch.
+
+31
+00:06:44,000 --> 00:06:54,000
+Do you remember which property fixes that? Set the Weight X property to 1.0, and we'll be good.
+
+32
+00:06:54,000 --> 00:59:00,000
+Let's try it. Now that all looks great. Next, we'll explore Sub Containers.
+

@@ -1,0 +1,68 @@
+1
+00:00:02,000 --> 00:00:09,000
+Now let's explore layered panes. Now you might remember our discussion earlier about the various layers of
+
+2
+00:00:09,000 --> 00:00:16,000
+the Root Pane. Layered panes take advantage of these so that layers of components can be painted on top of
+
+3
+00:00:16,000 --> 00:00:23,000
+each other and easily set to either visible or not visible.
+
+4
+00:00:23,000 --> 00:00:37,000
+Let's drag a layered pane into the design area. (Working) We'll need to add panels to the pane allowing the
+
+5
+00:00:37,000 --> 00:00:45,000
+addition of components as well if you wish. For this example though, let's just color each panel so we can
+
+6
+00:00:45,000 --> 00:00:52,000
+see what's going on. The first panel I drag is going to be in the topmost layer.
+
+7
+00:00:52,000 --> 00:01:10,000
+The next will be under that, and the next under that and so on. (Working)
+
+8
+00:01:10,000 --> 00:01:15,000
+Now to make a useful example, we'll need to write a small bit of code.
+
+9
+00:01:15,000 --> 00:01:32,000
+It will make more sense if we name each panel first. (Working)
+
+10
+00:01:32,000 --> 00:01:50,000
+So let's control the visibility of the panels with buttons. I need to add four buttons, one for each panel. (Working)
+
+11
+00:01:50,000 --> 00:01:57,000
+I don't need to waste time naming these buttons for now. Let's use the first button to make the red panel
+
+12
+00:01:57,000 --> 00:02:09,000
+visible and the others invisible, so we use the actionPerformed method to control this.
+
+13
+00:02:09,000 --> 00:02:25,000
+I can type in redPanel.setVisible and set it to true, and I'll set the others to false. (Typing)
+
+14
+00:02:25,000 --> 00:02:46,000
+Now I can copy and paste this to save time. (Working) Here we'll make only the blue panel visible, (Working)
+
+15
+00:02:46,000 --> 00:03:06,000
+here we'll make the green visible, (Working) and here the yellow one visible. (Working)
+
+16
+00:03:06,000 --> 00:03:18,000
+Now let's try it. (Working) You've learned the basics of layered panes.
+
+17
+00:03:18,000 --> 00:59:00,000
+Do you have any idea about how you might use them?
+

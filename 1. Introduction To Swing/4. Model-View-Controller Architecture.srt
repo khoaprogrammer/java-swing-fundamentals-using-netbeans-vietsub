@@ -1,0 +1,68 @@
+1
+00:00:02,000 --> 00:00:09,000
+Swing uses a common architecture called MVC or Model-View-Controller architecture.
+
+2
+00:00:09,000 --> 00:00:16,000
+Exactly what is that? Well, model is a representative of the state of a component such as a scroll bar would
+
+3
+00:00:16,000 --> 00:00:24,000
+contain information about its current position, its width, its minimum and maximum values.
+
+4
+00:00:24,000 --> 00:00:30,000
+This information does not change if the way the component is represented on the screen changes.
+
+5
+00:00:30,000 --> 00:00:38,000
+The view is how the component looks on the screen. A window might appear on a Mac or a Windows machine with
+
+6
+00:00:38,000 --> 00:00:45,000
+a different look and feel even though it's the same component. The controller tells the component how to
+
+7
+00:00:45,000 --> 00:00:54,000
+interact with events. Events could be a mouse-click, a keyboard command, or gaining or losing focus.
+
+8
+00:00:54,000 --> 00:00:59,000
+The controller decides how each component will or won't react to an event.
+
+9
+00:00:59,000 --> 00:01:08,000
+The model, the view, and the controller all act independently, yet they work together seamlessly.
+
+10
+00:01:08,000 --> 00:01:14,000
+Using the scroll bar as an example, the model provides the information about the scroll bar's width and the
+
+11
+00:01:14,000 --> 00:01:23,000
+position of the thumb. The view decides how to draw the scroll bar given that info, also knowing whether
+
+12
+00:01:23,000 --> 00:01:32,000
+it's horizontal or vertical and how to shade it. The controller knows that dragging the thumb or clicking
+
+13
+00:01:32,000 --> 00:01:39,000
+the end arrows should trigger events. Separation in the Model-View-Controller design allows you to bind
+
+14
+00:01:39,000 --> 00:01:48,000
+multiple views to the same components. It allows data to be represented say by a table or a pie chart
+
+15
+00:01:48,000 --> 00:01:51,000
+without affecting the underlying model.
+
+16
+00:01:51,000 --> 00:01:56,000
+Now that you have a good understanding of what Swing is, let's move forward to the next module and explore
+
+17
+00:01:56,000 --> 00:59:00,000
+the GUI builder in NetBeans, and we'll build our first application.
+

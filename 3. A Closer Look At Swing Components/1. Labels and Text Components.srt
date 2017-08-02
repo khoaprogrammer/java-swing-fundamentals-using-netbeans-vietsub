@@ -1,0 +1,288 @@
+1
+00:00:00,000 --> 00:00:07,000
+In this module, we're going to take a closer look at Swing components from labels to text fields and text
+
+2
+00:00:07,000 --> 00:00:15,000
+areas, buttons, lists, and combo boxes, spinners, sliders, progress bars, tables, and trees.
+
+3
+00:00:15,000 --> 00:00:17,000
+Let's just get right to it.
+
+4
+00:00:17,000 --> 00:00:24,000
+Open up NetBeans. First we'll need to start a new project, Java, Java Application.
+
+5
+00:00:24,000 --> 00:00:35,000
+Click Next. We'll call it SwingComponentProject. If the Create Main Class checkbox is checked,
+
+6
+00:00:35,000 --> 00:00:45,000
+make sure that it's unchecked because we don't need to do that. Click Finish.
+
+7
+00:00:45,000 --> 00:00:53,000
+Okay, so now we'll need to create our JForm, so right-click on the project, click New and JFrame From.
+
+8
+00:00:53,000 --> 00:01:08,000
+We'll call it SwingComponentGUI. We'll give the package name com.Pluralsight and click Finish.
+
+9
+00:01:08,000 --> 00:01:18,000
+Okay, we have our JFrame form. Let's add several labels and text boxes for the example I want to show you.
+
+10
+00:01:18,000 --> 00:01:44,000
+So first we'll add a label here, Label1, Label2, and Label3. Three text boxes, text fields, excuse me. (Working)
+
+11
+00:01:44,000 --> 00:01:57,000
+Okay, let's give these names so that they make sense later. For our first field, we'll call it First Name,
+
+12
+00:01:57,000 --> 00:02:18,000
+the next one Middle Name, and next Last Name. (Typing) Let's line up these fields just a little bit,
+
+13
+00:02:18,000 --> 00:02:27,000
+make it look better. Now let's change the variable names for these so they make more sense programmatically later on.
+
+14
+00:02:27,000 --> 00:02:42,000
+Let's call the first one firstNameLabel, change the variable name to middleNameLabel, and, you guessed it,
+
+15
+00:02:42,000 --> 00:03:12,000
+lastNameLabel. Our text fields, firstNameField, middleNameField, and lastNameField.
+
+16
+00:03:12,000 --> 00:03:19,000
+Let's select all of the text fields, and we'll set the number of columns within the box to 12.
+
+17
+00:03:19,000 --> 00:03:27,000
+This will hold them at that size. So, as you saw before, when we get rid of the text in the field,
+
+18
+00:03:27,000 --> 00:03:33,000
+they will not shrink. They will maintain the 12-column size. That's their preferred size.
+
+19
+00:03:33,000 --> 00:03:42,000
+So we'll lose all the text in the fields. Now, an interesting trick with labels is you can use something called
+
+20
+00:03:42,000 --> 00:03:52,000
+a pneumonic, so we'll give the first one a pneumonical F, the next one M, and the last one L.
+
+21
+00:03:52,000 --> 00:03:57,000
+This will allow us to use keyboard commands to give focus to the text fields.
+
+22
+00:03:57,000 --> 00:04:07,000
+So for first name we need to put the label for firstNameField, the label for middleNameField for the next one,
+
+23
+00:04:07,000 --> 00:04:17,000
+and the label for lastNameField for the last one. This will make it focus on the text field when we hit Alt+F,
+
+24
+00:04:17,000 --> 00:04:27,000
+Alt+M, or Alt+L. Let's run it, and we'll show you. As usual, you have to OK that this is the main class.
+
+25
+00:04:27,000 --> 00:04:32,000
+Notice that the first characters of each label are underlined indicating that they have a keyboard command
+
+26
+00:04:32,000 --> 00:04:41,000
+associated with them. If I type in Alt+L, that text field gains focus.
+
+27
+00:04:41,000 --> 00:04:49,000
+Alt+M and Alt+F, it works just fine. It's a nice little trick. Okay, let's have a look at some of the properties
+
+28
+00:04:49,000 --> 00:05:07,000
+of text fields. You can add an icon, an image if you wish. Let's import it to the project so it's part of it. (Working)
+
+29
+00:05:07,000 --> 00:05:15,000
+So you can have images and text co-existing within a label. You can also line up the text on either side of
+
+30
+00:05:15,000 --> 00:05:36,000
+the label using the horizontalTextPosition property. You can have different spacing by setting the iconTextGap.
+
+31
+00:05:36,000 --> 00:05:46,000
+For now, let's just reset that back to default. Now also you can have borders with a label if you wish,
+
+32
+00:05:46,000 --> 00:05:54,000
+that's Bevel Border here, different ones you can experiment with.
+
+33
+00:05:54,000 --> 00:06:05,000
+Let's try the Line Border, see what that looks like. You can play around all you want, but let's set this
+
+34
+00:06:05,000 --> 00:06:16,000
+back to default. Now with a text field, you can set the background to any color you wish if you feel that's
+
+35
+00:06:16,000 --> 00:06:22,000
+something you want to do. A text field can be editable. Usually that's set programmatically, but there is a
+
+36
+00:06:22,000 --> 00:06:28,000
+checkbox here to gray out the fields so the user can't input anything.
+
+37
+00:06:28,000 --> 00:06:36,000
+Foreground color would actually give the text a specific color.
+
+38
+00:06:36,000 --> 00:06:47,000
+You can set the alignment of the text within the field. You can set tooltips for a field, so let's say Help Me.
+
+39
+00:06:47,000 --> 00:06:57,000
+And let's run it, and we'll show you what the tooltip looks like.
+
+40
+00:06:57,000 --> 00:07:09,000
+There you go. Also, you can set any sort of font and size in bold or whatever.
+
+41
+00:07:09,000 --> 00:07:20,000
+And you can set borders, of course, on text fields as well. (Working)
+
+42
+00:07:20,000 --> 00:07:30,000
+Let's add another label here, and we'll call this one Password.
+
+43
+00:07:30,000 --> 00:07:42,000
+Let's change the variable name to passwordLabel. There's a special kind of text field called a Password
+
+44
+00:07:42,000 --> 00:07:48,000
+Field, and of course it comes up with the asterisks to hide what was typed.
+
+45
+00:07:48,000 --> 00:08:04,000
+Let's set its columns for 12 as well, let's clear out the text in the field, and let's run it.
+
+46
+00:08:04,000 --> 00:08:13,000
+As you can see, anything typed in this field shows up with the standard asterisks to hide the text.
+
+47
+00:08:13,000 --> 00:08:23,000
+Now let's have a look at a text area. Text areas allow the user to type in a large amount of text.
+
+48
+00:08:23,000 --> 00:08:28,000
+You'll see down here on the left it's automatically enclosed in a JScroll pane.
+
+49
+00:08:28,000 --> 00:08:35,000
+So if text is typed beyond the limits of the box area, scroll bars will appear.
+
+50
+00:08:35,000 --> 00:08:51,000
+Let's call it the bioTextArea. So our user can enter a bio. Let's put a label in here as well, call it bio,
+
+51
+00:08:51,000 --> 00:09:06,000
+bioLabel, and the name Bio. So let's run this and see what a text area looks like.
+
+52
+00:09:06,000 --> 00:09:19,000
+Let's type some text in. As you can see, there's no line wrapping.
+
+53
+00:09:19,000 --> 00:09:25,000
+Scroll bars appear automatically, but we would probably like to use the line wrap feature, which is one of
+
+54
+00:09:25,000 --> 00:09:40,000
+the properties of a text area, so we check that. Let's run it again. (Typing)
+
+55
+00:09:40,000 --> 00:09:47,000
+Now as we type, you'll see that it does line wrap. But look, it wraps right in the middle of a word.
+
+56
+00:09:47,000 --> 00:09:55,000
+We can fix that as well. So there's another property called wrapStyleWord, which will prevent that from happening.
+
+57
+00:09:55,000 --> 00:10:13,000
+Let's run it one last time. (Typing) That looks a lot better. (Typing)
+
+58
+00:10:13,000 --> 00:10:23,000
+Now if I keep on typing and fill up this whole area with text, you'll see the scroll bars automatically
+
+59
+00:10:23,000 --> 00:10:39,000
+appear, and it will not increase the size of the text area I have allowed here. (Working)
+
+60
+00:10:39,000 --> 00:10:46,000
+You could also set the fonts for a text area, of course the same old stuff.
+
+61
+00:10:46,000 --> 00:10:56,000
+You can set the color of the background if you wish. You can set the color of the foreground for the fonts.
+
+62
+00:10:56,000 --> 00:11:04,000
+You can set borders. Most components have these options. Now there's one final type of text field I want to
+
+63
+00:11:04,000 --> 00:11:21,000
+show you, so let's add another label and call it phoneLabel. (Typing)
+
+64
+00:11:21,000 --> 00:11:36,000
+Let's change its text to Phone. Then we'll add a FormattedTextField.
+
+65
+00:11:36,000 --> 00:11:47,000
+Let's make it 12 columns just like the others, clear out its text.
+
+66
+00:11:47,000 --> 00:11:52,000
+The interesting thing about a formatted field is this property formatterFactory.
+
+67
+00:11:52,000 --> 00:12:00,000
+This allows you to constrain text to specific formats, such as numbers, dates, times, percentage, currency,
+
+68
+00:12:00,000 --> 00:12:08,000
+or any specific pattern you want. Since this is a phone number, we'll use the custom mask.
+
+69
+00:12:08,000 --> 00:12:14,000
+It's already close to what we want, but we'll have to add an area code as well.
+
+70
+00:12:14,000 --> 00:12:28,000
+Now let's run it. Text entered here will automatically conform to the phone number format we wish.
+
+71
+00:12:28,000 --> 00:12:35,000
+So we've covered the basics of labels and text fields. Next, we'll learn about the various types of buttons,
+
+72
+00:12:35,000 --> 00:59:00,000
+including toggle buttons, radio buttons, and check boxes. Now let's move on and explore buttons.
+

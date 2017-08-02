@@ -1,0 +1,56 @@
+1
+00:00:00,000 --> 00:00:09,000
+NetBeans offers a powerful tool called the Beans Binding Library that is capable of binding values either
+
+2
+00:00:09,000 --> 00:00:14,000
+between different components or between a component and a database.
+
+3
+00:00:14,000 --> 00:00:22,000
+These values are automatically kept in sync, all requiring only a few lines of code.
+
+4
+00:00:22,000 --> 00:00:27,000
+Let's start with a simple example that binds the properties of two components.
+
+5
+00:00:27,000 --> 00:00:32,000
+One of the components will be the source, and the other will be the target.
+
+6
+00:00:32,000 --> 00:00:39,000
+A good example might be a JSlider providing its value to be displayed in a JLabel.
+
+7
+00:00:39,000 --> 00:00:49,000
+So I've built a new project called BindProject with a class BindGUI containing a JSlider and a JLabel,
+
+8
+00:00:49,000 --> 00:01:03,000
+which I have left with the default names jSlider1 and jLabel1. Let's make the label's font bigger and bold.
+
+9
+00:01:03,000 --> 00:01:12,000
+To bind these, all we have to do is right-click the label, select Bind and the target property we would like to change.
+
+10
+00:01:12,000 --> 00:01:20,000
+Let's choose its text property. The binding source, of course, will be jSlider1, and the value we would expect
+
+11
+00:01:20,000 --> 00:01:26,000
+the slider to output is an integer, so we select the value int.
+
+12
+00:01:26,000 --> 00:01:34,000
+As you see, the label's text has already changed to 0, which is the initial value of the slider.
+
+13
+00:01:34,000 --> 00:01:46,000
+That's all there is to it. Now let's run it, and you see that the label's text is in sync with the output
+
+14
+00:01:46,000 --> 00:59:00,000
+value of the slider.
+

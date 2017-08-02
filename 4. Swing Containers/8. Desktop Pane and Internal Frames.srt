@@ -1,0 +1,80 @@
+1
+00:00:03,000 --> 00:00:11,000
+The last containers we're going to learn about are the coolest, I think, Desktop Pane and Internal Frames.
+
+2
+00:00:11,000 --> 00:00:19,000
+These containers give you the power to build applications that look just like a computer desktop with internal windows.
+
+3
+00:00:19,000 --> 00:00:25,000
+The best way to teach you about these is just to show you. I've already built a new project called
+
+4
+00:00:25,000 --> 00:00:34,000
+DesktopProject with a class called DesktopGUI. Let's drag a Desktop Pane into the design area and stretch it
+
+5
+00:00:34,000 --> 00:00:48,000
+to the maximum. You can change the background color to whatever you like.
+
+6
+00:00:48,000 --> 00:00:57,000
+Now let's drag an Internal Frame on to the desktop. Not sure why the windows are so tiny by default.
+
+7
+00:00:57,000 --> 00:01:05,000
+The most important properties of internal frames are iconifiable, maximizable, and resizable.
+
+8
+00:01:05,000 --> 00:01:10,000
+We'll want to select all of these, and you'll see why in a minute.
+
+9
+00:01:10,000 --> 00:01:18,000
+And let's give the window a title as well. Let's add a couple more internal frames and duplicate those same
+
+10
+00:01:18,000 --> 00:01:36,000
+settings once again. (Working) Of course each internal frame can contain any containers or components.
+
+11
+00:01:36,000 --> 00:01:50,000
+Let's just add a label to each for now. It's time to run it and see what it does.
+
+12
+00:01:50,000 --> 00:01:59,000
+Check out the cool desktop. Since the internal frames are iconifiable, the minimize button appears in each frame.
+
+13
+00:01:59,000 --> 00:02:05,000
+And since the maximizable property is set, those buttons appear as well.
+
+14
+00:02:05,000 --> 00:02:11,000
+There's also a menu on the left with the same options, so I'm able to minimize each frame, and they dock
+
+15
+00:02:11,000 --> 00:02:30,000
+along the bottom. I can also move the iconified frame, and it will now dock to the new location. (Working)
+
+16
+00:02:30,000 --> 00:02:42,000
+Whichever frame you select automatically rises to the topmost layer so the frames can overlap.
+
+17
+00:02:42,000 --> 00:02:47,000
+There's one more property I should mention, and that's the closable property.
+
+18
+00:02:47,000 --> 00:03:03,000
+Let's select it for the first frame. Now you can see there is an X button allowing that window to close.
+
+19
+00:03:03,000 --> 00:03:09,000
+Of course you would have to offer an option to find that window once again, possibly a menu, but we'll get to
+
+20
+00:03:09,000 --> 00:59:00,000
+that soon enough. So now you've learned how to use Desktop Panes along with Internal Frames.
+

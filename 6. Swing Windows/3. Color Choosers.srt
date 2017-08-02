@@ -1,0 +1,84 @@
+1
+00:00:00,000 --> 00:00:07,000
+You may want to offer users the ability to choose color of components or
+
+2
+00:00:07,000 --> 00:00:14,000
+fonts within an application. Swing provides the JColorChooser component for this purpose.
+
+3
+00:00:14,000 --> 00:00:18,000
+The Color Chooser can be created anywhere within an application.
+
+4
+00:00:18,000 --> 00:00:25,000
+Once again, NetBeans provides a Color Chooser component you can simply drag into the design area or add from
+
+5
+00:00:25,000 --> 00:00:31,000
+palette to the Other Components item in the inspector, such as we did with the File Chooser.
+
+6
+00:00:31,000 --> 00:00:37,000
+But as with JOptionPanes, the easiest way to create a Color Chooser is with code.
+
+7
+00:00:37,000 --> 00:00:45,000
+Only one line of code is necessary. Let's use our FileChooserProject to demonstrate.
+
+8
+00:00:45,000 --> 00:01:03,000
+First, let's add another menu item to the File menu and call it Set Background.
+
+9
+00:01:03,000 --> 00:01:23,000
+Double-click to create its ActionPerformed method. Let's type JColorChooser.showDialog.
+
+10
+00:01:23,000 --> 00:01:31,000
+And, as you can see, there is only one option here, and a method with three simple parameters.
+
+11
+00:01:31,000 --> 00:01:40,000
+The first is the parent component, the same as we used in JOptionPane, next a title for the chooser window,
+
+12
+00:01:40,000 --> 00:01:55,000
+and last the initial color to be selected. So let's make the parent component null, add a title,
+
+13
+00:01:55,000 --> 00:02:09,000
+Please choose a color, and the initial color is a constant of the color object, Color.white.
+
+14
+00:02:09,000 --> 00:02:20,000
+Now this method returns a color object, so let's add that and call it color.
+
+15
+00:02:20,000 --> 00:02:26,000
+Now we can use that color result to set the background of our text area.
+
+16
+00:02:26,000 --> 00:02:50,000
+Just type textArea.setBackground(color). And that's it. Let's run the application and check it out. (Running)
+
+17
+00:02:50,000 --> 00:02:56,000
+Select the menu item Set Background, and the Color Chooser appears.
+
+18
+00:02:56,000 --> 00:03:01,000
+Now there are five different panels here with different ways to select colors.
+
+19
+00:03:01,000 --> 00:03:10,000
+If that is not enough for you, then color choosers can be customized for your specific needs as well.
+
+20
+00:03:10,000 --> 00:03:16,000
+If we choose a color and click OK, the text area's background is set to that color.
+
+21
+00:03:16,000 --> 00:59:00,000
+That was pretty easy. How would you use a Color Chooser in an application?
+

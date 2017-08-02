@@ -1,0 +1,64 @@
+1
+00:00:03,000 --> 00:00:10,000
+Next, we're going to explore toolbars. Toolbars can be oriented vertically or horizontally.
+
+2
+00:00:10,000 --> 00:00:17,000
+The typical toolbar contains buttons most often using image icons, something you've probably seen before such
+
+3
+00:00:17,000 --> 00:00:25,000
+as the cut, copy, and paste buttons. I'm going to use the Swing component GUI we built before because it has
+
+4
+00:00:25,000 --> 00:00:33,000
+a bit more room. I've already moved the existing components down a bit to make some space, so let's add a
+
+5
+00:00:33,000 --> 00:00:48,000
+toolbar at the top. (Working) Now to make this function as we want, we'll need to add a panel as well.
+
+6
+00:00:48,000 --> 00:00:57,000
+And to make this function properly as a floatable toolbar, we'll also need to set the layout to BorderLayout.
+
+7
+00:00:57,000 --> 00:01:05,000
+This will ensure that the toolbar can be floatable and redocked to the same location.
+
+8
+00:01:05,000 --> 00:01:13,000
+Now let's add three buttons. The buttons expand to maximum size because of the BorderLayout.
+
+9
+00:01:13,000 --> 00:01:32,000
+That's okay because we're going to add image icons with the icon property. (Working)
+
+10
+00:01:32,000 --> 00:01:49,000
+Let's adjust the toolbar to fit our new buttons. Now let's run the application. (Running)
+
+11
+00:01:49,000 --> 00:01:54,000
+Of course the buttons act like any button you're already familiar with.
+
+12
+00:01:54,000 --> 00:02:02,000
+Since our toolbar isFloatable property is checked, we can rip the toolbar off the frame and float it in a
+
+13
+00:02:02,000 --> 00:02:08,000
+variety of locations. The buttons will still perform as usual.
+
+14
+00:02:08,000 --> 00:02:14,000
+Then when the toolbar is closed, it redocks to its original location.
+
+15
+00:02:14,000 --> 00:02:20,000
+Now you have mastered toolbars. You can place any sort of component in a toolbar.
+
+16
+00:02:20,000 --> 00:59:00,000
+How would you use it?
+

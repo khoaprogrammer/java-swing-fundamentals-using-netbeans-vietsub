@@ -1,0 +1,48 @@
+1
+00:00:02,000 --> 00:00:08,000
+Okay, let's explore scroll panes. Scroll panes are somewhat self-explanatory.
+
+2
+00:00:08,000 --> 00:00:16,000
+As you have seen, NetBeans intuitively encloses components in scroll panes, such as text areas, lists, and so on.
+
+3
+00:00:16,000 --> 00:00:22,000
+You can also add scroll panes manually in much the same way as we did with JPanels or use the function,
+
+4
+00:00:22,000 --> 00:00:36,000
+Enclose In Scroll Pane, although some components are not allowed to be directly enclosed in a scroll pane.
+
+5
+00:00:36,000 --> 00:00:51,000
+You can though place components on a JPanel first and then enclose the JPanel in a scroll pane.
+
+6
+00:00:51,000 --> 00:00:57,000
+You can then decide how to set the appearance of both the vertical and horizontal scroll bars using the
+
+7
+00:00:57,000 --> 00:01:04,000
+properties horizontalScrollBarPolicy and verticalScrollBarPolicy.
+
+8
+00:01:04,000 --> 00:01:11,000
+You can choose AS_NEEDED, and they will appear when necessary. Or you can choose ALWAYS, and they will
+
+9
+00:01:11,000 --> 00:01:19,000
+always be visible. You can actually choose NEVER, but I'm not quite sure why you would add a scroll pane and
+
+10
+00:01:19,000 --> 00:01:26,000
+never have the scroll bars appear. Maybe you can tell me why. Another odd thing I haven't figured out,
+
+11
+00:01:26,000 --> 00:01:32,000
+there is a Scroll Bar component over here, but I don't know what you would ever do with it.
+
+12
+00:01:32,000 --> 00:59:00,000
+Please enlighten me if you have figured it out. (Working) Let's run the application and see how the scroll panel appears. (Working)
+

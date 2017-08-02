@@ -1,0 +1,88 @@
+1
+00:00:02,000 --> 00:00:08,000
+The next container we'll explore is the Split Pane. You have probably seen split panes used before
+
+2
+00:00:08,000 --> 00:00:18,000
+in applications. A split pane has two distinct resizable sections split either horizontally or vertically.
+
+3
+00:00:18,000 --> 00:00:27,000
+Example uses might be two text files that need to be compared or possibly a representation of a file structure.
+
+4
+00:00:27,000 --> 00:00:36,000
+You can place anything in either side of the pane, possibly buttons in one pane and a result in the other.
+
+5
+00:00:36,000 --> 00:00:43,000
+I have created a new project with a class called PlaygroundGUI so we can explore.
+
+6
+00:00:43,000 --> 00:00:51,000
+Let's drag a split pane into the design area and have a look. Now this requires some explanation.
+
+7
+00:00:51,000 --> 00:01:00,000
+The split pane in NetBeans defaults to two buttons, but they don't show up as components, a little confusing.
+
+8
+00:01:00,000 --> 00:01:07,000
+The buttons are only placeholders and will disappear once we drag a JPanel into each side.
+
+9
+00:01:07,000 --> 00:01:15,000
+Then we can add any components we wish. I want to add text areas to each pane.
+
+10
+00:01:15,000 --> 00:01:24,000
+I could try to drag text areas into each pane of the split pane and try to align the edges, but there is an easier way.
+
+11
+00:01:24,000 --> 00:01:42,000
+If I first drag two text areas into the design, (Working) then I can select them both, right-click, Enclose In,
+
+12
+00:01:42,000 --> 00:01:51,000
+Split Pane, and that's a lot easier. Notice NetBeans also encloses these in scroll panes automatically.
+
+13
+00:01:51,000 --> 00:02:05,000
+Let's set each text area to lineWrap and wrapStyleWord and place some default text as well. (Working)
+
+14
+00:02:05,000 --> 00:02:22,000
+Let's run it. The user can drag the divider back and forth as necessary.
+
+15
+00:02:22,000 --> 00:02:33,000
+You can set the initial location of the divider with the dividerLocation property.
+
+16
+00:02:33,000 --> 00:02:41,000
+The default position is designated as -1, but if you want to move it elsewhere the number value is actually in pixels.
+
+17
+00:02:41,000 --> 00:03:06,000
+(Working) You can also change the dividerSize property. That's also in pixels. (Working)
+
+18
+00:03:06,000 --> 00:03:21,000
+You can of course set the divider to VERTICAL_SPLIT here in the orientation property as well. (Working)
+
+19
+00:03:21,000 --> 00:03:27,000
+An additional feature can be enabled with the oneTouchExpandable property.
+
+20
+00:03:27,000 --> 00:03:38,000
+When enabled, two small arrows appear within the divider. (Working)
+
+21
+00:03:38,000 --> 00:03:50,000
+Clicking on one expands to the maximum. Clicking the other returns to default and then maximum the other way.
+
+22
+00:03:50,000 --> 00:59:00,000
+That's JSplit panes. You've learned the basic features. Please explore more with other components as well.
+

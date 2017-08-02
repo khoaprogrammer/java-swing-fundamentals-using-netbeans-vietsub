@@ -1,0 +1,92 @@
+1
+00:00:05,000 --> 00:00:11,000
+It's probably obvious now that buttons contain the same properties we've already discussed such as background,
+
+2
+00:00:11,000 --> 00:00:20,000
+foreground, font, icons, pneumonics, borders, and so on. Let's put a button here and change the name of it.
+
+3
+00:00:20,000 --> 00:00:27,000
+We'll call this on Submit. Previously, we discussed how to add the ActionPerformed method to a button,
+
+4
+00:00:27,000 --> 00:00:36,000
+so we're not going to do that again. For now, let's move on and add toggle buttons.
+
+5
+00:00:36,000 --> 00:00:46,000
+Unlike regular buttons, toggle buttons maintain two different states basically, selected and deselected.
+
+6
+00:00:46,000 --> 00:01:03,000
+Let's call this one Agree. (Working) As we run the application, we can see the toggle button's behavior
+
+7
+00:01:03,000 --> 00:01:25,000
+selected and deselected. (Working) Let's add a second toggle button and call it Disagree. (Working)
+
+8
+00:01:25,000 --> 00:01:33,000
+We can tie these two toggle buttons together using something called a Button Group.
+
+9
+00:01:33,000 --> 00:01:39,000
+As we drag the button group into the design area, it is invisible, but, as you can see, it appears in the
+
+10
+00:01:39,000 --> 00:02:02,000
+inspector window over here. Let's change its variable name to toggleButtonGroup. (Typing)
+
+11
+00:02:02,000 --> 00:02:08,000
+Now, if we select the Agree button, you can see that our toggleButtonGroup appears in its property for
+
+12
+00:02:08,000 --> 00:02:21,000
+buttonGroup, and we can assign this button to that group. Let's also do the same for the Disagree button. (Working)
+
+13
+00:02:21,000 --> 00:02:27,000
+Now when we run the application, selecting one deselects the other.
+
+14
+00:02:27,000 --> 00:02:32,000
+In this case, it probably makes more sense to have the Agree button initially selected.
+
+15
+00:02:32,000 --> 00:02:49,000
+We can set that in the Agree button's properties. Now if we run it again, you can see Agree is selected from the start.
+
+16
+00:02:49,000 --> 00:03:18,000
+Now let's check out radio buttons. Let's add three of them (Working) and call them Single, Married,
+
+17
+00:03:18,000 --> 00:03:29,000
+and Divorced/Widowed. Radio buttons are almost always in a button group.
+
+18
+00:03:29,000 --> 00:03:46,000
+Let's create another group and call it radioButtonGroup. Now we can select all three radio buttons and assign
+
+19
+00:03:46,000 --> 00:04:07,000
+them to our group. Let's run it and check it out. You could choose to have one initially selected or not.
+
+20
+00:04:07,000 --> 00:04:15,000
+Okay, lastly let's explore check boxes. These are not usually placed in button groups as the user is allowed
+
+21
+00:04:15,000 --> 00:04:36,000
+most of the time to check more than one. Let's call this one I agree to the terms, and this one Please send
+
+22
+00:04:36,000 --> 00:04:57,000
+me a newsletter. (Typing) Let's give the application a little extra space and run it.
+
+23
+00:04:57,000 --> 00:59:00,000
+As you can see, the check boxes act as expected. Next, we'll explore lists and combo boxes.
+

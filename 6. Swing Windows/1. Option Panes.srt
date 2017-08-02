@@ -1,0 +1,308 @@
+1
+00:00:00,000 --> 00:00:07,000
+In this module, we'll explore some fun and interesting features of Swing -
+
+2
+00:00:07,000 --> 00:00:10,000
+Dialog Windows,
+
+3
+00:00:10,000 --> 00:00:13,000
+File Choosers,
+
+4
+00:00:13,000 --> 00:00:15,000
+and Color Choosers.
+
+5
+00:00:15,000 --> 00:00:21,000
+Let's start with dialog windows. In the Abstract Windows Toolkit, the older version of Swing,
+
+6
+00:00:21,000 --> 00:00:28,000
+dialogs were dependent upon the native operating system, and coding was a lot more complex.
+
+7
+00:00:28,000 --> 00:00:35,000
+Now Swing offers the JOptionPane, which we briefly used in our first example application.
+
+8
+00:00:35,000 --> 00:00:42,000
+JOptionPanes are used when information needs to be displayed to the user briefly, so, for example,
+
+9
+00:00:42,000 --> 00:00:49,000
+a message window with an OK button. Also, they may be used to acquire some information from the user such as
+
+10
+00:00:49,000 --> 00:00:51,000
+a username or a password.
+
+11
+00:00:51,000 --> 00:01:00,000
+Now although NetBeans provides JOptionPanes and dialog components that you can drag into the design area,
+
+12
+00:01:00,000 --> 00:01:06,000
+I actually find it easier and more practical to build our own with code.
+
+13
+00:01:06,000 --> 00:01:13,000
+Most often, you're going to be creating these windows programmatically anyhow, and it only takes one line of
+
+14
+00:01:13,000 --> 00:01:19,000
+code to create a JOptionPane, so it's really easy to do.
+
+15
+00:01:19,000 --> 00:01:24,000
+JOptionPanes are made up of four elements, some of which may be null values.
+
+16
+00:01:24,000 --> 00:01:30,000
+First, there's a message, which usually contains textual information.
+
+17
+00:01:30,000 --> 00:01:37,000
+Second, there is an icon, which indicates which type of message you are displaying.
+
+18
+00:01:37,000 --> 00:01:43,000
+Third is a data input area allowing the user to enter some sort of value, and now this can be either a text
+
+19
+00:01:43,000 --> 00:01:52,000
+field, a list, or a combo box. And the fourth are buttons, such as OK or Cancel.
+
+20
+00:01:52,000 --> 00:01:56,000
+There are three basic formats of JOptionPane.
+
+21
+00:01:56,000 --> 00:02:03,000
+First, for information only types of messages, you can use the showMessageDialog method.
+
+22
+00:02:03,000 --> 00:02:07,000
+The second window that gives the user options can be brought up with
+
+23
+00:02:07,000 --> 00:02:13,000
+the showOptionDialog method. And last, for dialogs requiring user input,
+
+24
+00:02:13,000 --> 00:02:20,000
+you can use the showInputDialog method. Let's explore these with an example.
+
+25
+00:02:20,000 --> 00:02:30,000
+Let's use the SwingComponentGUI we previously built. Let's use the buttons in the toolbar to initiate our dialog windows.
+
+26
+00:02:30,000 --> 00:02:36,000
+So if we double-click jButton2, it will create an ActionPerformed method for our code.
+
+27
+00:02:36,000 --> 00:02:47,000
+Let's start with a simple message to display information to the user, so I'll type JOptionPane.showMessageDialog.
+
+28
+00:02:47,000 --> 00:02:52,000
+And you can see here that there are three options with different parameters.
+
+29
+00:02:52,000 --> 00:02:59,000
+Let's choose the simplest form first, which is this option. It requires two parameters.
+
+30
+00:02:59,000 --> 00:03:06,000
+First is the parent component. Now this can be used to place the window near a specific component,
+
+31
+00:03:06,000 --> 00:03:12,000
+but in most cases will be null, which places the dialog centered within the default JFrame.
+
+32
+00:03:12,000 --> 00:03:20,000
+So let's make the parent component null. The second parameter is for our message, so let's add a string.
+
+33
+00:03:20,000 --> 00:03:29,000
+How about Have a nice day! Now, of course, we need to add the import for the JOptionPane class, and let's run it.
+
+34
+00:03:29,000 --> 00:03:51,000
+(Running) We now have an informational dialog with an i icon, our message, and an OK button, which closes the window.
+
+35
+00:03:51,000 --> 00:04:13,000
+Let's go back to our method and try the next option, which adds a title and a message type. (Typing)
+
+36
+00:04:13,000 --> 00:04:18,000
+If you read the documentation here, you can see the various options for message type, which can be
+
+37
+00:04:18,000 --> 00:04:27,000
+ERROR_MESSAGE, INFORMATION_MESSAGE, WARNING_MESSAGE, QUESTION_MESSAGE, or PLAIN_MESSAGE.
+
+38
+00:04:27,000 --> 00:04:34,000
+Each will automatically contain a corresponding image icon with the exception of PLAIN_MESSAGE, which is no icon.
+
+39
+00:04:34,000 --> 00:04:43,000
+If you really want to customize your own window, it is also possible to choose and display your own custom image icon.
+
+40
+00:04:43,000 --> 00:04:49,000
+Let's choose this option without a custom icon. The parent component should be null.
+
+41
+00:04:49,000 --> 00:05:06,000
+Let's add a message. (Working) Now something isn't right here with the way NetBeans created our parameters.
+
+42
+00:05:06,000 --> 00:05:12,000
+The next two parameters are title and message type. For some reason this comes up with WIDTH.
+
+43
+00:05:12,000 --> 00:05:30,000
+Let's just ignore that, and let's type a title, and we'll of course make this a WARNING_MESSAGE from JOptionPane. (Working)
+
+44
+00:05:30,000 --> 00:05:45,000
+Now let's give it a try. (Running) There, now our title appears, and it displays the warning icon.
+
+45
+00:05:45,000 --> 00:05:55,000
+Please play around with these further on your own. Now let's explore the second type of JOptionPane using
+
+46
+00:05:55,000 --> 00:06:18,000
+showOptionDialog. Let's double-click jButton3, (Working) and there's only one option here as you can see.
+
+47
+00:06:18,000 --> 00:06:26,000
+You can read about the parameters displayed here in the help text, and there's a new parameter called optionType,
+
+48
+00:06:26,000 --> 00:06:38,000
+which gives options such as YES_NO, YES_NO_CANCEL, and OK_CANCEL.
+
+49
+00:06:38,000 --> 00:06:43,000
+And again, of course the parameters displayed here are really of no help.
+
+50
+00:06:43,000 --> 00:06:48,000
+Now since we're going to have several options, the easiest way to deal with this is to create an array of
+
+51
+00:06:48,000 --> 00:06:59,000
+objects, which will be our selection of strings. Let's create a variable called options, which contains our string array.
+
+52
+00:06:59,000 --> 00:07:23,000
+(Working) The first parameter in the method is the parent component.
+
+53
+00:07:23,000 --> 00:07:55,000
+We'll set that to null. Next is the message. (Working) Next, the title for the window. (Working)
+
+54
+00:07:55,000 --> 00:08:13,000
+And let's choose the option type as YES_NO_CANCEL, (Working) then the message type as QUESTION_MESSAGE,
+
+55
+00:08:13,000 --> 00:08:29,000
+a null icon, our array of options, and an initial value. Now the showOptionDialog method returns an integer
+
+56
+00:08:29,000 --> 00:08:36,000
+indicating the user's choice or a closed option value if the user closes the window.
+
+57
+00:08:36,000 --> 00:08:52,000
+Okay, let's run it. (Running) Our dialog appears with three buttons showing our options.
+
+58
+00:08:52,000 --> 00:09:07,000
+Now let's try out dialogs that require user input. So let's double-click the jButton4, and this time we'll
+
+59
+00:09:07,000 --> 00:09:17,000
+use the method showInputDialog. Ah, here we have six options with various parameters.
+
+60
+00:09:17,000 --> 00:09:24,000
+The simplest option is just a basic message. Let's try that. This method is going to return the user's
+
+61
+00:09:24,000 --> 00:09:40,000
+input as a string, so let's create a variable called input and type our message, Please enter a value.
+
+62
+00:09:40,000 --> 00:09:57,000
+Let's run it. (Running) Our dialog displays the question mark icon and has automatically added a text field,
+
+63
+00:09:57,000 --> 00:10:04,000
+an OK, and a Cancel button. If we type something and hit OK, the value would of course be assigned to our
+
+64
+00:10:04,000 --> 00:10:10,000
+string called input. Currently, we're not doing anything with that value.
+
+65
+00:10:10,000 --> 00:10:15,000
+Cancelling the window would return a null value to our input string.
+
+66
+00:10:15,000 --> 00:10:26,000
+Now let's go back to our method and check out our other options.
+
+67
+00:10:26,000 --> 00:10:37,000
+The second choice adds the parent component. The next option would place an initial value, a string into the text field.
+
+68
+00:10:37,000 --> 00:10:43,000
+The next offers the various types of image icons that can be associated and a title.
+
+69
+00:10:43,000 --> 00:10:52,000
+And the last offers a custom icon, an array of selection values, and an initial value.
+
+70
+00:10:52,000 --> 00:10:59,000
+Why not? Let's just go for the most complex. Once again, NetBeans doesn't display the correct parameters
+
+71
+00:10:59,000 --> 00:11:22,000
+here, so I'll just have to remember, so the parent component, null again, our message, a title, the message type,
+
+72
+00:11:22,000 --> 00:11:36,000
+(Working) an icon, let's just keep it null, our selection values.
+
+73
+00:11:36,000 --> 00:11:43,000
+Now, here we'll need to create an object array of string values to choose from, so let's create a variable
+
+74
+00:11:43,000 --> 00:12:06,000
+called options with several string values, then place that into our method. (Working)
+
+75
+00:12:06,000 --> 00:12:22,000
+And lastly, let's choose Yes as our initial value. The method returns an object, so we need to cast it to a string.
+
+76
+00:12:22,000 --> 00:12:39,000
+Let's run it. (Running) Now our dialog displays a list with our values, and Yes is initially selected.
+
+77
+00:12:39,000 --> 00:59:00,000
+There are many variations of dialog windows. Please explore these further on your own.
+

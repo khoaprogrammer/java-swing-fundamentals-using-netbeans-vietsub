@@ -1,0 +1,112 @@
+1
+00:00:00,000 --> 00:00:09,000
+Nearly every application you write will require menus. NetBeans provides a very easy-to-use interface to
+
+2
+00:00:09,000 --> 00:00:15,000
+build and implement Swing menus. Swing menus are capable of much more than the typical menu.
+
+3
+00:00:15,000 --> 00:00:24,000
+Swing allows multiple menus on components and frames, and the location of menus can be set by the layout manager.
+
+4
+00:00:24,000 --> 00:00:26,000
+For our example though, we'll go
+
+5
+00:00:26,000 --> 00:00:33,000
+with a typical menu at the top of the frame. Swing allows icon images in menu items, and you can easily add
+
+6
+00:00:33,000 --> 00:00:41,000
+keyboard shortcuts to items as well. You can also make use of checkboxes and radio buttons in a menu.
+
+7
+00:00:41,000 --> 00:00:46,000
+You will also see that it's easy to build submenus within a menu.
+
+8
+00:00:46,000 --> 00:00:53,000
+Then we'll learn about pop-up menus as well. And, of course, we will write code in our even handlers to make
+
+9
+00:00:53,000 --> 00:00:56,000
+our menus do something useful.
+
+10
+00:00:56,000 --> 00:01:03,000
+Let's jump right in and try it out. Let's use our existing desktop GUI for the example.
+
+11
+00:01:03,000 --> 00:01:10,000
+To start, let's drag a JMenuBar to the top of the frame. The JMenuBar is preloaded with File and Edit
+
+12
+00:01:10,000 --> 00:01:18,000
+placeholder menus, but there are no menu items under them. You can add a menu item by right-clicking the
+
+13
+00:01:18,000 --> 00:01:29,000
+File menu and selecting Add From Palette Menu Item. Then we can right-click the new item and edit text.
+
+14
+00:01:29,000 --> 00:01:37,000
+Let's call it New. If I double-click the shortcut box here, the window opens to select a keyboard shortcut.
+
+15
+00:01:37,000 --> 00:01:44,000
+I could select these manually, but I'm lazy, so I'll click in the Key Stroke area here and enter the keys
+
+16
+00:01:44,000 --> 00:01:54,000
+directly from the keyboard. Let's use Ctrl+N. Now I can also add an image icon here using the icon property
+
+17
+00:01:54,000 --> 00:02:14,000
+similar to what we have done before. (Working) I have an image for our example.
+
+18
+00:02:14,000 --> 00:02:32,000
+Okay, let's add a separator, Add From Palette, Separator. Let's add another menu item and call it Open. (Working)
+
+19
+00:02:32,000 --> 00:02:49,000
+Add another image icon (Working) and set its keyboard shortcut to Ctrl+O.
+
+20
+00:02:49,000 --> 00:03:08,000
+Now another separator and one last menu item, and call it Exit with a shortcut of Ctrl+Q.
+
+21
+00:03:08,000 --> 00:03:19,000
+Now I want to change the name of the next menu, so right-click, Edit Text, and call it View.
+
+22
+00:03:19,000 --> 00:03:26,000
+Let's add three menu items, and we'll use these to set our internal frame's visibility.
+
+23
+00:03:26,000 --> 00:04:02,000
+So we'll add Window 1 with a shortcut of Ctrl+1, Window 2 with a shortcut of Ctrl+2, and Window 3 with a
+
+24
+00:04:02,000 --> 00:04:16,000
+shortcut of Ctrl+3. Now if we want to add an additional menu, right-click the menu bar and select Add Menu.
+
+25
+00:04:16,000 --> 00:04:31,000
+Let's call this one, Help. Now I want to add a submenu, so I select Add From Palette, Menu.
+
+26
+00:04:31,000 --> 00:04:49,000
+Let's call it Contents. Then add a Menu Item and call it Index.
+
+27
+00:04:49,000 --> 00:05:13,000
+And lastly, another Menu Item called Getting Started. Okay, let's run the application and see what it looks like. (Running)
+
+28
+00:05:13,000 --> 00:59:00,000
+All of our items appear, and our submenus appear as well. Next, we'll add checkboxes and radio buttons to menus.
+

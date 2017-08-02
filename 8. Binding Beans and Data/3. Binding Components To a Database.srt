@@ -1,0 +1,84 @@
+1
+00:00:02,000 --> 00:00:08,000
+Let's use our new contact database and display its data in a table.
+
+2
+00:00:08,000 --> 00:00:15,000
+We already have a contact form we built earlier that matches some of the fields in the GridBagProject.
+
+3
+00:00:15,000 --> 00:00:22,000
+To save time, we've only used four of these fields. So let's use the GridBagProject.
+
+4
+00:00:22,000 --> 00:00:29,000
+We will need to create an entity bean to represent the data in the contacts database.
+
+5
+00:00:29,000 --> 00:00:38,000
+It's easy to create. Right-click the GridBagProject, select New and Other, then Persistence, then Entity
+
+6
+00:00:38,000 --> 00:00:47,000
+Classes from Database. In the database connection list, you should see the ContactDB listed here.
+
+7
+00:00:47,000 --> 00:00:53,000
+If you don't, did you remember to start the server and connect to the database?
+
+8
+00:00:53,000 --> 00:00:59,000
+Select ContactDB, and you will see a list of available tables here.
+
+9
+00:00:59,000 --> 00:01:06,000
+There's our CONTACTS table. Select CONTACTS and click Add. Then click Next.
+
+10
+00:01:06,000 --> 00:01:14,000
+Make sure these checkboxes are all selected. Then click Finish.
+
+11
+00:01:14,000 --> 00:01:22,000
+A new class is generated here called Contacts.java. If you are familiar with Java, you will recognize this
+
+12
+00:01:22,000 --> 00:01:29,000
+as a Java bean with getter and setter methods for each of our columns in the table.
+
+13
+00:01:29,000 --> 00:01:40,000
+Now we're going to need a Swing table to display our data. Let's create a new JFrame in the GridBagProject
+
+14
+00:01:40,000 --> 00:02:06,000
+and call it ContactsTableGUI in the com.Pluralsight package. Drag a JTable into the design area, resize it a
+
+15
+00:02:06,000 --> 00:02:24,000
+bit, right-click it, and select Bind elements. Then click Import Data to Form.
+
+16
+00:02:24,000 --> 00:02:30,000
+Choose ContactDB as the connection, and CONTACTS should be displayed as the table.
+
+17
+00:02:30,000 --> 00:02:40,000
+Click OK. We see the list of columns here. We may not want to display the id, so let's click it and move it
+
+18
+00:02:40,000 --> 00:02:47,000
+to the left column. The other columns are in reverse order here for some reason, but we can move them up and
+
+19
+00:02:47,000 --> 00:02:54,000
+down to whichever order we wish. Then click OK. There's our table.
+
+20
+00:02:54,000 --> 00:03:10,000
+Run it. We now have two GUIs to choose from, so click this one, and set it to the default.
+
+21
+00:03:10,000 --> 00:59:00,000
+Our table data is displayed in the JTable now.
+

@@ -1,0 +1,48 @@
+1
+00:00:02,000 --> 00:00:09,000
+Swing menus allow checkboxes and radio buttons as menu items. In fact, all menu items extend a class called
+
+2
+00:00:09,000 --> 00:00:17,000
+abstract button as menus do behave much the same way as buttons do, if you think about it.
+
+3
+00:00:17,000 --> 00:00:28,000
+Let's add a new menu. Now I'll attempt its location over to the left of Help.
+
+4
+00:00:28,000 --> 00:00:46,000
+Oops, I missed. Let me try again. Okay, let's call this menu CheckBox, then Add From Palette, Menu Item/CheckBox.
+
+5
+00:00:46,000 --> 00:01:08,000
+Let's add several. I'm not going to bother naming these. Let's add another menu and call it Radio.
+
+6
+00:01:08,000 --> 00:01:16,000
+I want to move this one over too. I'm getting better at this. Let's Add From Palette, Menu Item/RadioButton.
+
+7
+00:01:16,000 --> 00:01:31,000
+Again, let's add several. (Working) Now, radio buttons usually only allow one selection, so we'll need to add
+
+8
+00:01:31,000 --> 00:01:38,000
+a radio button group. As expected, the group is invisible, but shows up in the inspector.
+
+9
+00:01:38,000 --> 00:01:48,000
+Let's select all three RadioButton items and select our buttonGroup.
+
+10
+00:01:48,000 --> 00:02:07,000
+It's time to run it and try it out. Our CheckBox items can be selected or deselected, and our RadioButton
+
+11
+00:02:07,000 --> 00:02:13,000
+items behave as a group allowing only one to be selected at a time.
+
+12
+00:02:13,000 --> 00:59:00,000
+Now, let's move forward and add real event code to our examples.
+

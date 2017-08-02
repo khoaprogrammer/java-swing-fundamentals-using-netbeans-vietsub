@@ -1,0 +1,84 @@
+1
+00:00:03,000 --> 00:00:08,000
+Now let's take a look at Swing's popular features.  One of the most popular features of Swing is a
+
+2
+00:00:08,000 --> 00:00:15,000
+pluggable look and feel. Programmers can easily set the overall look and feel of an application so that it
+
+3
+00:00:15,000 --> 00:00:23,000
+matches the environment it will run on. Windows and components can have the look and feel that match
+
+4
+00:00:23,000 --> 00:00:31,000
+existing Windows, Mac, or Unix platforms. Swing also comes with very nice look and feel called metal,
+
+5
+00:00:31,000 --> 00:00:38,000
+which has some very nice features. Look and feel can also be switched by the user if you wish to allow that
+
+6
+00:00:38,000 --> 00:00:44,000
+without even closing the application since look and feels are dictated at runtime.
+
+7
+00:00:44,000 --> 00:00:51,000
+If it's important to you, the look and feel of each component can be customized to create any look and feel you wish.
+
+8
+00:00:51,000 --> 00:01:00,000
+Additional features of Swing include the ability to display tooltips and also bind keyboard commands to components.
+
+9
+00:01:00,000 --> 00:01:05,000
+Let's take a look at the SwingSet demo we downloaded earlier to demonstrate.
+
+10
+00:01:05,000 --> 00:01:16,000
+Start up the SwingSet application, let's click on the JTable for a typical-looking window, and click on View,
+
+11
+00:01:16,000 --> 00:01:23,000
+and pull down to Look and Feel. You're currently viewing the Nimbus look and feel.
+
+12
+00:01:23,000 --> 00:01:33,000
+Let's switch it to the Motif Unix-style look, and then let's have a look at the Windows look.
+
+13
+00:01:33,000 --> 00:01:41,000
+Now, scroll down here to the bottom, and click on ToolTips, and as you roll over this image here you'll see
+
+14
+00:01:41,000 --> 00:01:46,000
+the basic tooltip I'm sure you're already familiar with seeing.
+
+15
+00:01:46,000 --> 00:01:54,000
+But now roll over here, and you can see that Swing allows functionality for HTML-styled tooltips as well.
+
+16
+00:01:54,000 --> 00:01:59,000
+Play around some more here if you wish, and then let's get back to the course.
+
+17
+00:01:59,000 --> 00:02:04,000
+Another important feature of Swing is that all of its components are lightweight.
+
+18
+00:02:04,000 --> 00:02:12,000
+Essentially, this means that components are not dependent on the native OS and instead are created at runtime.
+
+19
+00:02:12,000 --> 00:02:20,000
+That means that Swing will run on Windows, Mac, Unix, Solaris, or any other machine that runs Java.
+
+20
+00:02:20,000 --> 00:02:27,000
+Lastly, let's talk just for a few minutes about the architecture that Swing is built on top of, and then we'll
+
+21
+00:02:27,000 --> 00:59:00,000
+move on to create some applications.
+

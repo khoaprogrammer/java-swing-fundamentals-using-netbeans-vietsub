@@ -1,0 +1,56 @@
+1
+00:00:03,000 --> 00:00:07,000
+Another type of menu we need to learn about is the pop-up menu.
+
+2
+00:00:07,000 --> 00:00:14,000
+Now when I drag a pop-up menu into the design area, it of course is invisible, but does appear in the
+
+3
+00:00:14,000 --> 00:00:22,000
+inspector window under Other Components. We'll have to build the menu here, so right-click,
+
+4
+00:00:22,000 --> 00:00:44,000
+Add From Palette, Menu Item. Let's add several. (Working) Let's change the text of each to let's say Yes,
+
+5
+00:00:44,000 --> 00:00:56,000
+No, and Maybe. We'll need to add some event handling code as well.
+
+6
+00:00:56,000 --> 00:01:02,000
+Here we might expect the user to click on the desktop pane, so we'll place it there.
+
+7
+00:01:02,000 --> 00:01:10,000
+We'll want to select Events, Mouse, mousePressed. And to make this function across all platforms,
+
+8
+00:01:10,000 --> 00:01:27,000
+we'll also have to duplicate the code in Events, Mouse, mouseReleased since some platforms treat this differently.
+
+9
+00:01:27,000 --> 00:01:37,000
+We have to check that this mouse event occurred while over our desktop pane, so this is done with the method isPopupTrigger.
+
+10
+00:01:37,000 --> 00:01:53,000
+To show the pop-up, we type jPopupMenu1.show (Typing) with evt.getComponent.
+
+11
+00:01:53,000 --> 00:02:11,000
+And to make the pop-up appear where the user clicked, we use evt.getX and evt.getY.
+
+12
+00:02:11,000 --> 00:02:19,000
+Now we'll need to copy this into the mouseReleased method as well.
+
+13
+00:02:19,000 --> 00:02:44,000
+Let's see if it works. (Running) Now, if I right-click on the desktop, our menu appears wherever I clicked.
+
+14
+00:02:44,000 --> 00:59:00,000
+You can of course then add event handling code to each of its menu items.
+

@@ -1,0 +1,56 @@
+1
+00:00:02,000 --> 00:00:10,000
+You have learned about the structure and use of Swing containers and how NetBeans makes them easy to design and implement.
+
+2
+00:00:10,000 --> 00:00:19,000
+You've learned about JRootPane and its elements JLayeredPane containing JMenuBar and contentPane.
+
+3
+00:00:19,000 --> 00:00:25,000
+You've also learned about the six different layers that JLayeredPane consists of.
+
+4
+00:00:25,000 --> 00:00:34,000
+You learned to use JPanels to enclose and group other components into sections within your application.
+
+5
+00:00:34,000 --> 00:00:38,000
+You learned that you can enclose other containers inside a scroll pane.
+
+6
+00:00:38,000 --> 00:00:39,000
+You learned how to
+
+7
+00:00:39,000 --> 00:00:49,000
+implement split panes and its properties dividerLocation, dividerSize, and oneTouchExpandable.
+
+8
+00:00:49,000 --> 00:00:57,000
+You have learned how to create tabs within a tabbed pane and how to next tabbed panes as well.
+
+9
+00:00:57,000 --> 00:01:06,000
+You've learned the capabilities of JLayeredPane and how to hide or show a layer using the setVisible method.
+
+10
+00:01:06,000 --> 00:01:12,000
+You now know how to create floatable toolbars within any application.
+
+11
+00:01:12,000 --> 00:01:22,000
+You've learned how to build a fully-functioning desktop-style application using JDesktopPane and JInternalFrames.
+
+12
+00:01:22,000 --> 00:01:31,000
+You know how to make JInternalFrames iconifiable, maximizable, resizable, and closable.
+
+13
+00:01:31,000 --> 00:01:37,000
+Since now you have a good understanding of components and containers, you are already well
+
+14
+00:01:37,000 --> 00:59:00,000
+on your way to mastering Swing and NetBeans.
+

@@ -1,0 +1,60 @@
+1
+00:00:02,000 --> 00:00:10,000
+Let's learn about tabbed panes next. Let's drag a Tabbed Pane into the design area.
+
+2
+00:00:10,000 --> 00:00:16,000
+If we want to see defined edges around the pane, we'll need a border.
+
+3
+00:00:16,000 --> 00:00:23,000
+I like the Soft Bevel Border for this. Now the tabbed pane all by itself doesn't look like much.
+
+4
+00:00:23,000 --> 00:00:30,000
+To add tabs, you must drag JPanels into the tabbed pane for each tab.
+
+5
+00:00:30,000 --> 00:00:37,000
+When the border of the tabbed pane changes to dashed lines, then you can drop the panel in.
+
+6
+00:00:37,000 --> 00:00:44,000
+You can of course place any sort of components into each tab. Let's add some labels to each just for
+
+7
+00:00:44,000 --> 00:00:52,000
+demonstration purposes. It is also possible to nest tabbed panes.
+
+8
+00:00:52,000 --> 00:01:00,000
+Select the tabbed pane, right-click, and select Enclose In Tabbed Pane.
+
+9
+00:01:00,000 --> 00:01:15,000
+That will add a tab. To add another tab, right-click, Add From Palette, Swing Containers, Tabbed Pane.
+
+10
+00:01:15,000 --> 00:01:29,000
+Now to change the name of a tab, right-click, and go to Edit Text.
+
+11
+00:01:29,000 --> 00:01:38,000
+You can use the tabPlacement property to position the tabs TOP, BOTTOM, LEFT, or RIGHT.
+
+12
+00:01:38,000 --> 00:01:47,000
+You can also order the tabs using the selectedIndex property. The index counts from 0, so the first tab is
+
+13
+00:01:47,000 --> 00:02:05,000
+numbered 0, the next 1, and so on, 0 being the default. Let's have a look at the application. (Working)
+
+14
+00:02:05,000 --> 00:02:19,000
+Oops, I forgot to add a border to the outer tabbed panes. Let's try again. (Working)
+
+15
+00:02:19,000 --> 00:59:00,000
+You have learned the basics of tabbed panes now. I think you'll agree they're rather easy to implement.
+
